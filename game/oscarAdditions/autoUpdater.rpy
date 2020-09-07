@@ -22,5 +22,5 @@ init python:
     def updateChecker():
         if renpy.variant("mobile"):
             return False
-        if not isUpToDate(modConfigPath, "https://raw.githubusercontent.com/KiloOscarSix/Hypnosis-OscarSix-s-Mod/master/game/oscarAdditions/modConfig.txt"):
+        if not isUpToDate(modConfigPath, "https://raw.githubusercontent.com/KiloOscarSix/Ataegia-OscarSix-s-Mod/master/game/oscarAdditions/modConfig.txt"):
             return True
