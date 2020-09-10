@@ -1,4 +1,4 @@
-init 1 python:
+init python:
     galleryCharacter = "All"
     galleryPageNumber = 1
 
@@ -18,50 +18,50 @@ init 1 python:
     ],
     "All": {
     1: [
-    ["keepbath", {}, "/images/bath001/aynabath013.jpg"],
-    ["bredita018", {}, "/images/Bredita/bredita018.jpg"],
-    ["heaven017", {}, "/images/Dreams/heaven017.jpg"],
-    ["sunbanglili001", {}, "/images/suntakolili/sunlili020.jpg"],
-    ["fuckgisellev2", {}, "/images/v0.2/2stage/v2137.jpg"],
-    ["emiliasexpart", {}, "/images/v0.2.1/v021033.jpg"],
-    ["v25", {}, "/images/v0.2.5/v25154.jpg"],
-    ["v026", {}, "/images/v0.2.6A/v26a009.jpg"],
+    ["keepbath", {}, "/images/bath001/aynabath013.jpg"], # Katriona + Ayna
+    ["galleryScene1", {}, "/images/Bredita/bredita018.jpg"], # Bredita
+    ["sweetdream", {}, "/images/Dreams/heaven017.jpg"], # Ayna + Katriona
+    ["sunbanglili001", {}, "/images/suntakolili/sunlili020.jpg"], # lili
+    ["fuckgisellev2", {"helparnoldus":0}, "/images/v0.2/2stage/v2137.jpg"], # giselle
+    ["emiliasexpart", {}, "/images/v0.2.1/v021033.jpg"], # emilia
+    ["v25", {}, "/images/v0.2.5/v25154.jpg"], # Bredita + Ayna
+    ["v026", {}, "/images/v0.2.6A/v26a009.jpg"], # Yumiko
     ],
     2: [
-    ["MVampireendv26", {}, "/images/v0.2.6np/v26n102.jpg"],
-    ["v026neutralpart2", {}, "/images/v0.2.6np/v26n137.jpg"],
-    ["yourroomv3e", {}, "/images/v0.3/evil/v3e088.jpg"],
-    ["afterfannayv3g", {}, "/images/v0.3/good/v3g088.jpg"],
-    ["v3sheknowsisa", {}, "/images/v0.3.1n/v31n091.jpg"],
-    ["nextfasezordruzav32g", {}, "/images/v0.3.2g/v32g060.jpg"],
-    ["v33salazar", {}, "/images/v0.3.3e/v33066.jpg"],
-    ["v36fannay", {}, "/images/v0.3.6/v36045.jpg"],
+    ["galleryScene2", {}, "/images/v0.2.6np/v26n102.jpg"], # Master Vampire
+    ["v026neutralpart2", {"isabellalove":99, "Points":99}, "/images/v0.2.6np/v26n137.jpg"], # Isabella
+    ["yourroomv3e", {"afteralinepart":1, "midaown":0, "midalove":99}, "/images/v0.3/evil/v3e088.jpg"], # Amida
+    ["afterfannayv3g", {}, "/images/v0.3/good/v3g088.jpg"], # Amida
+    ["v3sheknowsisa", {"isabellalove":99}, "/images/v0.3.1n/v31n091.jpg"], # Isabella
+    ["galleryScene3", {}, "/images/v0.3.2g/v32g060.jpg"], # Zordruza
+    ["v33salazar", {"Points":99}, "/images/v0.3.3e/v33066.jpg"], # Lili
+    ["v36fannay", {}, "/images/v0.3.6/v36045.jpg"], # Fannay + Amida
     ],
     3: [
-    ["end_1_nothing_else_matters", {}, "/images/v0.3.6/v36112.jpg"],
-    ["v37aftervincubus", {}, "/images/v0.3.7/v37072.jpg"],
-    ["tisbetterthan2", {}, "/images/v0.3.8/v38043.jpg"],
-    ["soloingisgood2", {}, "/images/v0.3.8/v38081.jpg"],
-    ["evilpartroomv38", {}, "/images/v0.3.8/v38135.jpg"],
-    ["orcbedv39", {}, "/images/v0.3.9/v39136.jpg"],
-    ["v4hannasex", {}, "/images/v0.4/v4046.jpg"],
-    ["v43somehanna", {}, "/images/v0.4/v4105.jpg"],
+    ["end_1_nothing_else_matters", {}, "/images/v0.3.6/v36112.jpg"], # Aelia + Amida + Ayna + Isabella + Lili
+    ["galleryScene4", {}, "/images/v0.3.7/v37072.jpg"], # Enainia
+    ["tisbetterthan2", {"my_path_is":"good", "midacorr":99}, "/images/v0.3.8/v38043.jpg"], # amida + fannay
+    ["soloingisgood2", {}, "/images/v0.3.8/v38081.jpg"], # Amida
+    ["evilpartroomv38", {}, "/images/v0.3.8/v38135.jpg"], # Fannay
+    ["orcbedv39", {}, "/images/v0.3.9/v39136.jpg"], # Yotul
+    ["v4hannasex", {}, "/images/v0.4/v4046.jpg"], # Hanna
+    ["v43somehanna", {"hannacorr":99, "calessapet":2}, "/images/v0.4/v4105.jpg"], # Calessa + Hanna
     ],
     4: [
-    ["v4fuckpethall", {}, "/images/v0.4/v4198.jpg"],
-    ["v4fuck50room", {}, "/images/v0.4/v4215.jpg"],
-    ["v4runartalk", {}, "/images/v0.4.1/v41114.jpg"],
-    ["v42church", {}, "/images/v0.4.2/v42048.jpg"],
-    ["v43isasex", {}, "/images/v0.4.3/v43109.jpg"],
-    ["v43lilisex", {}, "/images/v0.4.3/v43135.jpg"],
-    ["v43zorsex", {}, "/images/v0.4.3/v43166.jpg"],
-    ["afterlogcabin", {}, "/images/v0.15/missions/v15mission073.jpg"],
+    ["v4fuckpethall", {}, "/images/v0.4/v4198.jpg"], # Calessa
+    ["v4fuck50room", {}, "/images/v0.4/v4215.jpg"], # Calessa
+    ["v4runartalk", {}, "/images/v0.4.1/v41114.jpg"], # Mida
+    ["galleryScene6", {}, "/images/v0.4.2/v42048.jpg"], # Carilielle
+    ["v43isasex", {"isabellalove":99}, "/images/v0.4.3/v43109.jpg"], # Isabella
+    ["v43lilisex", {"lilicorr":99}, "/images/v0.4.3/v43135.jpg"], # Lili
+    ["v43zorsex", {}, "/images/v0.4.3/v43166.jpg"], # Zor
+    ["galleryScene7", {}, "/images/v0.15/missions/v15mission073.jpg"], # Amida
     ],
     5: [
-    ["postimp", {}, "/images/v0.18/breditalili/v18044.jpg"],
+    ["galleryScene8", {}, "/images/v0.18/breditalili/v18044.jpg"], # Bredita, Lili
     ["postlibrarystory", {}, "/images/v0.18/devil sibs/v18101.jpg"],
-    ["v18midasex2", {}, "/images/v0.18/mcroom/v18137.jpg"],
-    ["lichthehellout", {}, "/images/y1/1y065.jpg"],
+    ["v18midasex2", {"midacorr":99, "midalove":99, "firstgoingv18":0}, "/images/v0.18/mcroom/v18137.jpg"],
+    ["beforeGalleryScene9", {}, "/images/y1/1y065.jpg"],
     ],
     },
     }
@@ -181,3 +181,15 @@ screen sceneGalleryMenu():
                 action Replay(i[0], scope=scopeDict, locked=False)
                 idle Transform(i[2], zoom=0.2)
                 hover Transform(im.MatrixColor(i[2], im.matrix.brightness(0.2)), zoom=0.2)
+
+
+label beforeGalleryScene9:
+    menu:
+        "OscarSix" "Path?"
+        "Good":
+            $ wheretoafterslayerbath = "good"
+        "Neutral":
+            $ wheretoafterslayerbath = "neutral"
+        "Evil":
+            $ wheretoafterslayerbath = "Evil"
+    jump galleryScene9
