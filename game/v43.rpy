@@ -11,6 +11,7 @@ init:
     $ v43visitroomcheck = 0
     $ v43endsexwith = 0
     $ v43lilidom = 0
+    $ v43nobooks = 0
 
 label v43version:
     $ v43check = 1
@@ -294,7 +295,7 @@ label v43demonspells:
         scene v43085
         with dissolve
         yisnna "I'll need some time to translate this.."
-        yisnna "I still can't belive this..."
+        yisnna "I still can't believe this..."
         MC "..."
         scene v43086
         with dissolve
@@ -411,7 +412,25 @@ label v43mcroom:
     if v43visitroomcheck == 1:
         MC "I should look around the college a bit more"
         jump afterorcv39
-
+    if v43nobooks == 1 and v43speakryo >= 1:
+        $ v43visitroomcheck = 1
+        scene v43043
+        with dissolve
+        MC "I think I need a rest now..."
+        show blink1
+        with dissolve
+        show blink2
+        with dissolve
+        show blink3
+        with dissolve
+        scene black
+        with dissolve
+        stop music
+        play music "<loop 0.0>dark.mp3"
+        if Points >= 0:
+            jump v43goodside
+        else:
+            jump v43badside
     if v43bookpay == 1 and v43speakryo >= 1:
         $ v43visitroomcheck = 1
         scene v43043
@@ -1656,5 +1675,5 @@ label v43breditanecro:
     Bredita "Open your eyes..."
     Bredita "And obey!"
     brutus "Ahhhhnnnn..."
-    jump yann11
+    jump v44script
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

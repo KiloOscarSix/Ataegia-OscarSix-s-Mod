@@ -288,7 +288,7 @@ style quick_button_text:
 screen navigation():
 
 
-    text "{size=-30}{color=#f00} V0.4.3 {/color} (All paths) {/size}":
+    text "{size=-30}{color=#f00} V0.4.4 {/color} (All paths) {/size}":
         xpos 1900
         ypos 30
     imagebutton auto "gui/kofi_%s.png" xalign 1.00 yalign 1.00 action OpenURL("https://www.buymeacoffee.com/BOTUQjCW2")
