@@ -270,6 +270,7 @@ label v44sexyotul:
     yotul "Yotul pleased, Yotul wants to look for tribe now"
     MC "Let's go then"
     $ v44youtulsex = 1
+    $ renpy.end_replay()
     jump v44rejsexyotul
 
 label v44rejsexyotul:
@@ -1000,6 +1001,7 @@ label v44menuask:
             katriona "I feel the same way. You'll always be my little flower boy"
             katriona "We'll put this behind us and move on"
             MC "Speaking of behinds, ours are totally naked... how are we getting back to the College?"
+            $ renpy.end_replay()
             jump v44bugr
         "No, I wanted it as much as you{color=#1BBB20} (+1 Katriona's Love)":
 
@@ -1032,6 +1034,7 @@ label v44menuask:
             katriona "You make a very interesting point."
             katriona "Yeah, I definitely raised you right, you inherited my deviousness"
             MC "Thank you. Now.. about our clothes?"
+            $ renpy.end_replay()
             jump v44bugr
 
 
@@ -1739,6 +1742,7 @@ label v44emiliasexpart:
 
 
 label v44endemilia:
+    $ renpy.end_replay()
     if v44visitbrothel <= 1:
         scene v44187
         with dissolve

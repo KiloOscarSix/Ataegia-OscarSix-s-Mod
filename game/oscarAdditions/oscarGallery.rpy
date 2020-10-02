@@ -62,6 +62,9 @@ init python:
     ["postlibrarystory", {}, "/images/v0.18/devil sibs/v18101.jpg"],
     ["v18midasex2", {"midacorr":99, "midalove":99, "firstgoingv18":0}, "/images/v0.18/mcroom/v18137.jpg"],
     ["beforeGalleryScene9", {}, "/images/y1/1y065.jpg"],
+    ["v44sexyotul", {}, "/images/v0.4.4/v44012.jpg"],
+    ["v44deadslime", {"katrionalove":99}, "/images/v0.4.4/v44129.jpg"],
+    ["v44emiliasexpart", {}, "/images/v0.4.4/v44181.jpg"],
     ],
     },
     }
