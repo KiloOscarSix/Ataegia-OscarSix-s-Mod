@@ -46,7 +46,7 @@ screen navigation():
         textbutton _("Options") action ShowMenu("preferences")
 
         if main_menu:
-            textbutton _("Oscar's Gallery") action [Show("sceneCharacterMenu"), ui.callsinnewcontext("galleryNameChange")]
+            textbutton _("Oscar's Gallery") action [Show("sceneGalleryMenu"), ui.callsinnewcontext("galleryNameChange")]
 
         if _in_replay:
 
