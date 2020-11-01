@@ -48,7 +48,7 @@ label v44script:
     ayna "What do you say [MC]? Do you want to go with Yotul?"
     ayna "And help her find her tribe?"
     menu:
-        "Of course I will{color=#1BBB20} (+1 Ayna/Katriona Love)":
+        "Of course I will[ablovecolor] [abloveboth]":
             scene v39058
             with dissolve
             MC "Of course I will"
@@ -105,7 +105,7 @@ label v44script:
             yotul "[MC] wants to have fun with Yotul here?"
             MC "..."
             menu:
-                "{color=#1BBB20}Hell yes!":
+                "[abgreen]Hell yes!":
                     jump v44sexyotul
                 "No, we have matters to take care of":
                     scene v44004
@@ -386,7 +386,7 @@ label v44rejsexyotul:
     "You and Yotul are back to the college"
     yotul "Yotul thanks [MC] for help"
     menu:
-        "You are now even more in my debt{color=#FF0000} (-1 Alignment)":
+        "You are now even more in my debt[abred] [abnoalignment]":
             $ Points -= 1
             "You lost 1 point"
             scene v44160
@@ -397,7 +397,7 @@ label v44rejsexyotul:
             with dissolve
             MC "Very well"
             jump v44postyotul
-        "You don't have to, I'm glad to help{color=#1BBB20} (+1 Alignment)":
+        "You don't have to, I'm glad to help[abgreen] [abalignment]":
 
             $ Points += 1
             "You gain 1 point"
@@ -990,7 +990,7 @@ label v44deadslime:
 
 label v44menuask:
     menu:
-        "Yes, the spores did it":
+        "Yes, the spores did it[abred] [abnoloveidiot3]":
             $ katrionalove -= 3
             $ v44rejectkat = 1
             "Katriona loves you less"
@@ -1184,7 +1184,7 @@ label v44bugr:
     with dissolve
     katriona "Let me see..."
     menu:
-        "Pay for Katriona{color=#1BBB20} (+1 Katriona Love)" if Gold >= 50:
+        "Pay for Katriona[ablovecolor] [ablove]" if Gold >= 50:
             scene v44098
             with dissolve
             MC "Here"
@@ -1198,7 +1198,7 @@ label v44bugr:
             $ katrionalove += 1
             "Katriona loves you more"
 
-        "Pay, but tell her she owes you now{color=#FF0000} (+1 Katriona's Corruption)" if Gold >= 50:
+        "Pay, but tell her she owes you now[abcorruptioncolor] [abcorruption]" if Gold >= 50:
             scene v44098
             with dissolve
             MC "Here"
@@ -1441,7 +1441,7 @@ label v44citytravel:
     else:
         "Should I return to the college?"
         menu:
-            "Return to the college":
+            "[abgreen]Return to the college":
                 jump v44backtothecollegeayna
             "Keep looking around the city":
                 call screen allesterracitymapnoshipv44
@@ -1538,7 +1538,7 @@ label brothelv44:
     madam "So what do you say?"
     madam "Emilia can satisfy all your desires for just 25 gold"
     menu:
-        "{color=#1BBB20}A little fun wouldn't hurt":
+        "[abgreen]A little fun wouldn't hurt":
             madam "That's great, you have to pay up front though"
             MC "Ok..."
             if Gold >= 25:
@@ -1623,7 +1623,7 @@ label v44emiliasexpart:
             emilia "And it's tasty..."
             MC "Glad you like it..."
             jump v44endemilia
-        "{color=#1BBB20}Resist":
+        "[abgreen]Resist":
 
             MC "Lie on the bed, I'm going to fuck you hard"
             scene v44175
@@ -1671,7 +1671,7 @@ label v44emiliasexpart:
                     emilia "And it's tasty..."
                     MC "Glad you like it..."
                     jump v44endemilia
-                "{color=#1BBB20}Resist":
+                "[abgreen]Resist":
 
                     MC "Turn around I'm fucking you from behind"
                     scene v44180
@@ -1788,5 +1788,4 @@ label v44backtothecollegeayna:
 
 
 
-    jump yann11
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+    jump v45start

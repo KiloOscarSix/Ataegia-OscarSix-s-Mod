@@ -109,7 +109,7 @@ label liliquestionsv33:
     with dissolve
     lili "Shall we go?"
     menu:
-        "I have other questions":
+        "[abgreen]I have other questions":
             scene v33013
             with dissolve
             lili "Ok, what do you want to know?"
@@ -339,7 +339,7 @@ label keepchoosingv33e:
                 $ Altepoints = skillcheck + Altepoints
                 "Your Alteration skill improved"
                 $ powercount = powercount - skillcheck
-        "Raise Ilusion {image=001illusion}":
+        "Raise Illusion {image=001illusion}":
 
             $ skillcheck = int(renpy.input(prompt="How many points?", default="0", allow="0123456789", length=2))
             if skillcheck >= powercount +1:
@@ -347,7 +347,7 @@ label keepchoosingv33e:
                 jump keepchoosingv33e
             else:
                 $ Iluspoints = skillcheck + Iluspoints
-                "Your Ilusion skill improved"
+                "Your Illusion skill improved"
                 $ powercount = powercount - skillcheck
         "Raise Mysticism {image=001myst}":
 
@@ -435,7 +435,7 @@ label v33salazar:
     lili "You... Are master... I..."
     $ lilifuckedv33 = 0
     menu:
-        "Play along{color=#FF0000} (-1 Alignment)":
+        "Play along[abred] [abnoalignment]":
             MC "Yes I'm your master and you'll do whatever I say"
             $ Points -= 1
             "You lost 1 point"
@@ -443,7 +443,7 @@ label v33salazar:
             with dissolve
             lili "Yes master, of course, what do you want me to do?"
             menu:
-                "Those clothes are in my way":
+                "[abgreen]Those clothes are in my way":
                     scene v33049
                     with dissolve
                     lili "These clothes? I'll remove them master"
@@ -517,7 +517,7 @@ label v33salazar:
                             MC "What the? She passed out..."
                             $ lilifuckedv33 = 1
                             jump nextv33were
-                        "Fuck her":
+                        "[abgreen]Fuck her":
 
                             MC "Show me that ass again I want to try something"
                             lili "Yes master"
@@ -585,7 +585,7 @@ label v33salazar:
                             MC "What the? She passed out..."
                             $ lilifuckedv33 = 1
                             jump nextv33were
-                "Break the spell{color=#1BBB20} (+1 Alignment)":
+                "Break the spell[abgreen] [abalignment]":
 
 
                     MC "Break out of it Liliana, stay focused"
@@ -606,7 +606,7 @@ label v33salazar:
                     "She collapsed to the floor"
                     MC "What the? She passed out..."
                     jump nextv33were
-        "Break the spell{color=#1BBB20} (+1 Alignment)":
+        "Break the spell[abgreen] [abalignment]":
 
 
             MC "Break out of it Liliana, stay focused"
@@ -723,3 +723,4 @@ label evilis1year:
     scene black
     with dissolve
     jump lichthehellout
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

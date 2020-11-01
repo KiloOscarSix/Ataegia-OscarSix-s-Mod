@@ -14,7 +14,7 @@ label v031good:
         MC "I need to get up..."
         MC "Should I wake her to tell her I'm leaving? Or just leave her sleeping?"
         menu:
-            "{color=#1BBB20}Wake her up":
+            "[abgreen]Wake her up":
                 MC "Hey Mida... Mida?"
                 amida "Hmmm mnmnmm"
                 MC "It's morning already, sorry but I need to go"
@@ -232,7 +232,7 @@ label v031good:
     MC "Hmm... what?"
     zordruza "You've been staring into my eyes for a while now..."
     menu:
-        "{color=#1BBB20}I find your eyes to be beautiful":
+        "[abgreen]I find your eyes to be beautiful":
             scene v32g025
             with dissolve
             zordruza "Ahahaha, what a charmer we have here..."
@@ -423,7 +423,7 @@ label keepchoosingv32g:
                 $ Altepoints = skillcheck + Altepoints
                 "Your Alteration skill improved"
                 $ powercount = powercount - skillcheck
-        "Raise Ilusion {image=001illusion}":
+        "Raise Illusion {image=001illusion}":
 
             $ skillcheck = int(renpy.input(prompt="How many points?", default="0", allow="0123456789", length=2))
             if skillcheck >= powercount +1:
@@ -431,7 +431,7 @@ label keepchoosingv32g:
                 jump keepchoosingv32g
             else:
                 $ Iluspoints = skillcheck + Iluspoints
-                "Your Ilusion skill improved"
+                "Your Illusion skill improved"
                 $ powercount = powercount - skillcheck
         "Raise Mysticism {image=001myst}":
 
@@ -550,7 +550,7 @@ label nextfasezordruzav32g:
     zordruza "Don't you want to?"
     MC "I..."
     menu:
-        "{color=#1BBB20}Yes I want to":
+        "[abgreen]Yes I want to":
             scene v32g044
             with dissolve
             zordruza "Hmmm... Then let's give you something to remember"
@@ -1151,3 +1151,4 @@ label goodis1year:
     scene black
     with dissolve
     jump lichthehellout
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

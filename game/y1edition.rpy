@@ -300,7 +300,7 @@ label lichthehellout:
     with dissolve
     MC "I..."
     menu:
-        "{color=#1BBB20}Let her continue":
+        "[abgreen]Let her continue":
             MC "Go on..."
             scene 1y070
             with dissolve
@@ -313,7 +313,7 @@ label lichthehellout:
             cari "Hmm.... I'm going to drain you completely!!"
             "You feel so good you are about to cum, but you also feel like your power is fading..."
             menu:
-                "Cum in her mouth{color=#FF0000} (Game over)":
+                "Cum in her mouth":
                     MC "I'm cumming!!!"
                     show shot
                     with hpunch
@@ -348,7 +348,7 @@ label lichthehellout:
                         MC "Ah.... It's..."
                         "You feel like you are about to cum..."
                         menu:
-                            "Cum in her mouth{color=#FF0000} (Game over)":
+                            "Cum in her mouth":
                                 MC "I'm cumming!!!"
                                 show shot
                                 with hpunch
@@ -381,7 +381,7 @@ label lichthehellout:
                                 MC "Ah.... It's..."
                                 "You feel like you are about to cum..."
                                 menu:
-                                    "Cum in her mouth{color=#FF0000} (Game over)":
+                                    "Cum in her mouth":
                                         MC "I'm cumming!!!"
                                         show shot
                                         with hpunch
@@ -422,7 +422,7 @@ label lichthehellout:
                         MC "Ah.... It's..."
                         "You feel like you are about to cum..."
                         menu:
-                            "Cum in her mouth{color=#FF0000} (Game over)":
+                            "Cum in her mouth":
                                 MC "I'm cumming!!!"
                                 show shot
                                 with hpunch
@@ -455,7 +455,7 @@ label lichthehellout:
                                 MC "Ah.... It's..."
                                 "You feel like you are about to cum..."
                                 menu:
-                                    "Cum in her mouth{color=#FF0000} (Game over)":
+                                    "Cum in her mouth":
                                         MC "I'm cumming!!!"
                                         show shot
                                         with hpunch
@@ -468,7 +468,7 @@ label lichthehellout:
                                         with dissolve
                                         cari "You're mine now... Ahahaha"
                                         jump gameoverdead
-                                    "{color=#1BBB20}Resist":
+                                    "[abgreen]Resist":
 
                                         MC "Stop it!!"
                                         scene 1y098
@@ -496,7 +496,7 @@ label lichthehellout:
                         MC "Ah.... It's..."
                         "You feel like you are about to cum..."
                         menu:
-                            "Cum in her mouth{color=#FF0000} (Game over)":
+                            "Cum in her mouth":
                                 MC "I'm cumming!!!"
                                 show shot
                                 with hpunch
@@ -529,7 +529,7 @@ label lichthehellout:
                                 MC "Ah.... It's..."
                                 "You feel like you are about to cum..."
                                 menu:
-                                    "Cum in her mouth{color=#FF0000} (Game over)":
+                                    "Cum in her mouth":
                                         MC "I'm cumming!!!"
                                         show shot
                                         with hpunch

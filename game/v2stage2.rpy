@@ -5,7 +5,7 @@ label caveinteriorv2:
     MC "It's much better in here, but it's so dark"
     MC "I need to do something so I can see"
     menu:
-        "{color=#1BBB20}Use Magelight{image=001alteration}":
+        "[abgreen]Use Magelight{image=001alteration}":
             scene v2065
             with dissolve
             MC "I think that Magelight will allow me to see where I am"
@@ -29,7 +29,7 @@ label caveinteriorv2:
             with dissolve
             MC "Now!!"
             jump fightspiderv2
-        "Don't use anything and rest{color=#FF0000} (Game over)":
+        "Don't use anything and rest":
 
 
             scene v2065
@@ -53,7 +53,7 @@ label fightspiderv2:
     scene v2074
     with dissolve
     menu:
-        AB "Use only what you have >= 4 or {color=#FF0000}game over{/color}"
+        AB "Use only what you have >= 4 or [abred]game over{/color}"
         "Use Fireball{image=001battle}":
             scene v2075
             with dissolve
@@ -253,7 +253,7 @@ label spidersareuglyv2:
     MC "I bumped my head, but I'm fine now"
     fannay "Do you want a kiss to make you feel better?"
     menu:
-        "{color=#1BBB20}Yes, that would help for sure":
+        "[abgreen]Yes, that would help for sure":
             scene v2094
             with dissolve
             fannay "Hmmm here you go then"
@@ -470,7 +470,7 @@ label cityallesterrav2st2:
     arnoldus "Blahhh"
     $ helparnoldus = 0
     menu:
-        "{color=#1BBB20}Help them":
+        "[abgreen]Help them":
             MC "Maybe I should help them? They did buy me drinks after all"
             scene v2116
             with dissolve
@@ -488,8 +488,7 @@ label helpingarnold:
     scene v2119
     with dissolve
     menu:
-        AB "If heal>= 4 the first option will work"
-        "Use your healing on Arnoldus":
+        "[abgreen]Use your healing on Arnoldus":
             scene v2120
             with dissolve
             MC "Let me try something Giselle"
@@ -514,7 +513,7 @@ label helpingarnold:
                 arnoldus "Then you will stay with us, let's go to our place"
                 giselle "Yes, it's the least we can do"
                 menu:
-                    "{color=#1BBB20}Go with them":
+                    "[abgreen]Go with them":
                         scene v2123
                         with dissolve
                         MC "That would be great, I didn't know where I was going to stay"
@@ -592,7 +591,7 @@ label carryarnoldv2:
     with dissolve
     giselle "'Anything at all'"
     menu:
-        "{color=#1BBB20}Anything hmm?":
+        "[abgreen]Anything hmm?":
             scene v2132
             with dissolve
             giselle "Yes... If you understand what I mean..."
@@ -624,7 +623,7 @@ label carryarnoldv2:
                     scene black
                     with dissolve
                     jump newdayv2
-                "{color=#1BBB20}You bet your ass I want more":
+                "[abgreen]You bet your ass I want more":
 
                     scene v2132
                     with dissolve
@@ -674,7 +673,7 @@ label gisellehomev2:
     with dissolve
     giselle "'Anything at all'"
     menu:
-        "{color=#1BBB20}Anything hmm?":
+        "[abgreen]Anything hmm?":
             scene v2132
             with dissolve
             giselle "Yes... If you understand what I mean..."
@@ -706,7 +705,7 @@ label gisellehomev2:
                     scene black
                     with dissolve
                     jump newdayv2
-                "{color=#1BBB20}You bet your ass I want more":
+                "[abgreen]You bet your ass I want more":
 
                     scene v2132
                     with dissolve
@@ -827,7 +826,7 @@ label fuckgisellev2:
                 scene black
                 with dissolve
                 jump newdayv2
-            "{color=#1BBB20}Fuck it, let's do it":
+            "[abgreen]Fuck it, let's do it":
 
                 $ helparnoldus = 4
                 scene v2147
@@ -939,7 +938,7 @@ label fuckgisellev2:
                 scene black
                 with dissolve
                 jump newdayv2
-            "{color=#1BBB20}Fuck it, let's do it":
+            "[abgreen]Fuck it, let's do it":
 
                 $ helparnoldus = 5
                 scene v2147a
@@ -1062,7 +1061,7 @@ label nothelparnold:
             MC "Yawn...Ahh..My back...That's what you get for sleeping on the streets..."
             MC "Let's look for Onzanu now"
             jump newdayv2pt2
-        "Nah, here, take the gold{color=#FF0000} (-5 Gold)":
+        "Nah, here, take the gold[abred] [abnogold5]":
 
             scene v2103
             with dissolve

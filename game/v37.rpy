@@ -249,7 +249,7 @@ label vers037:
 
             stop sound fadeout 7.0
             mvoice "No way!!"
-        "No way!!{color=#1BBB20} (+1 Katriona's Love)":
+        "No way!![ablovecolor] [ablove]":
 
 
             $ leaveherv37 = 1
@@ -644,7 +644,7 @@ label v37aftervincubus:
             scene v37071
             with dissolve
             enainia "{i} Muah"
-        "{color=#1BBB20}Put a finger in her pussy":
+        "[abgreen]Put a finger in her pussy":
 
             scene v37068
             with dissolve
@@ -892,7 +892,7 @@ label v37aftervincubus:
     Bredita "Or partially controlled by demons"
     $ tellthemlust = 0
     menu:
-        "{color=#1BBB20}Tell them what happened and about Lust":
+        "[abgreen]Tell them what happened and about Lust":
             scene v37101
             with dissolve
             ayna "Really? Why did she let you go?"
@@ -1010,7 +1010,7 @@ label v37rolftalk:
     rolf "Yes... Or you can die..."
     MC "... I see"
     menu:
-        "You take the bottle":
+        "[abgreen]You take the bottle":
             $ devilbloodbottle = 1
             scene v37108n2
             with dissolve
@@ -1251,3 +1251,4 @@ label v37afterprivatetalk:
     MC "It does look like it..."
 
     jump v038
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

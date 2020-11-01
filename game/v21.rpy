@@ -98,7 +98,7 @@ label brothelv21:
         madam "So young boy, do you want to have fun?"
         madam "Emilia can satisfy all your desires for just 25 gold"
         menu:
-            "{color=#1BBB20}A little fun wouldn't hurt":
+            "[abgreen]A little fun wouldn't hurt":
                 madam "That's great, you have to pay up front though"
                 MC "Ok..."
                 if Gold >= 25:
@@ -137,7 +137,7 @@ label brothelv21:
         madam "So young boy, do you want to have fun?"
         madam "Emilia can satisfy all your desires for just 25 gold"
         menu:
-            "{color=#1BBB20}A little fun wouldn't hurt":
+            "[abgreen]A little fun wouldn't hurt":
                 madam "That's great, you have to pay up front though"
                 MC "Ok..."
                 if Gold >= 25:
@@ -176,7 +176,7 @@ label brothelv21:
         madam "So young boy, do you want to have fun?"
         madam "Emilia can satisfy all your desires for just 25 gold"
         menu:
-            "{color=#1BBB20}A little fun wouldn't hurt":
+            "[abgreen]A little fun wouldn't hurt":
                 madam "That's great, you have to pay up front though"
                 MC "Ok..."
                 if Gold >= 25:
@@ -215,7 +215,7 @@ label brothelv21:
         madam "So young boy, do you want to have fun?"
         madam "Emilia can satisfy all your desires for just 25 gold"
         menu:
-            "{color=#1BBB20}It was fun, why not?":
+            "[abgreen]It was fun, why not?":
                 madam "That's great, you have to pay up front though"
                 MC "Ok..."
                 if Gold >= 25:
@@ -436,7 +436,7 @@ label tavernv21:
         keeper "I was about to make my move on this beauty"
         keeper "Then you showed up and ruined everything"
         menu:
-            "Threaten him aggressively{color=#FF0000} (-1 Alignment)":
+            "Threaten him aggressively[abred] [abnoalignment]":
 
                 MC "You know that I'm a Mage right?"
                 keeper "Yes... And?"
@@ -531,7 +531,7 @@ label shopv21:
         shop "Can I help you with something?"
         $ visitedshop = 1
         menu:
-            "{color=#1BBB20}I'm investigating the missing ship":
+            "[abgreen]I'm investigating the missing ship":
                 shop "Really? I was expecting some merchandise from that ship"
                 shop "If it doesn't show up, I'll lose some gold"
                 scene v021008
@@ -541,7 +541,7 @@ label shopv21:
                     "That's to bad, I got to go":
                         shop "Ok bye..."
                         jump allesterracitymap_v21
-                    "{color=#1BBB20}Weird stuff? Like what?":
+                    "[abgreen]Weird stuff? Like what?":
                         shop "Some strange noises and missing things, I don't believe in ghosts but..."
                         MC "Ghosts? I'm sure that there is another explanation..."
                         shop "I know but... I don't really know what to think..."
@@ -550,7 +550,7 @@ label shopv21:
                                 shop "Yeah... I hope so..."
                                 MC "Bye, see you around"
                                 jump allesterracitymap_v21
-                            "Do you want me to take a look?{color=#1BBB20} (+1 Alignment)":
+                            "Do you want me to take a look?[abgreen] [abalignment]":
                                 scene v021009
                                 with dissolve
                                 shop "Really? You would do that?"
@@ -569,7 +569,7 @@ label shopv21:
         with dissolve
         shop "You are back, can I help you with anything?"
         menu:
-            "{color=#1BBB20}I'm still investigating the missing ship":
+            "I'm still investigating the missing ship":
                 shop "Really?"
                 scene v021008
                 with dissolve
@@ -578,7 +578,7 @@ label shopv21:
                     "That's to bad, I got to go":
                         shop "Ok bye..."
                         jump allesterracitymap_v21
-                    "{color=#1BBB20}Weird stuff? Like what?":
+                    "[abgreen]Weird stuff? Like what?":
                         shop "Some strange noises and missing things, I don't believe in ghosts but..."
                         MC "Ghosts? I'm sure that there is another explanation..."
                         shop "I know but... I don't really know what to think..."
@@ -587,7 +587,7 @@ label shopv21:
                                 shop "Yeah... I hope so..."
                                 MC "Bye, see you around"
                                 jump allesterracitymap_v21
-                            "Do you want me to take a look?{color=#1BBB20} (+1 Alignment)":
+                            "Do you want me to take a look?[abgreen] [abalignment]":
                                 scene v021009
                                 with dissolve
                                 shop "Really? You would do that?"
@@ -644,7 +644,7 @@ label chestshopv21:
         MC "There is a book and gold inside, what should I do?"
 
         menu:
-            AB "Random points"
+            AB "Random skill point for the two first options."
             "Just read the book":
                 $ dice = renpy.random.randint(1, 7)
                 $ chestbasementshop = 1
@@ -710,7 +710,7 @@ label chestshopv21:
                     "Your Necromancy increased"
                     $ Necropoints += 1
                     jump v21basementshop
-            "Steal the gold and read the book{color=#FF0000} (-1 Alignment/+15 Gold)":
+            "Steal the gold and read the book[abred] [abnoalignmentgold15]":
 
 
 
@@ -808,7 +808,7 @@ label holewallshopv21:
         MC "Now that's a big hole in the wall"
         MC "Should I take a peak inside?"
         menu:
-            "{color=#1BBB20}Yes":
+            "[abgreen]Yes":
                 $ holewallshop = 1
                 MC "Let's try to find out what's inside"
                 "You start to hear something, and then you see..."
@@ -892,7 +892,7 @@ label holewallshopv21:
                     "What is happening here?"
                     lili "Do you want me to satisfy your needs master?"
                     menu:
-                        "{color=#1BBB20}If you insist...":
+                        "[abgreen]If you insist...":
                             scene v021066
                             with dissolve
                             lili "You're so hard for me already Master"
@@ -919,7 +919,7 @@ label holewallshopv21:
     else:
         MC "Should I take a peak inside?"
         menu:
-            "{color=#1BBB20}Yes":
+            "[abgreen]Yes":
                 MC "Let's try to find out what's inside"
                 "You start to hear something, and then you see..."
                 scene v021059
@@ -999,7 +999,7 @@ label holewallshopv21:
                     "What is happening here?"
                     lili "Do you want me to satisfy your needs master?"
                     menu:
-                        "{color=#1BBB20}If you insist...":
+                        "[abgreen]If you insist...":
                             scene v021066
                             with dissolve
                             lili "You're so hard for me already Master"
@@ -1094,11 +1094,11 @@ label cityguildv21:
             if gravekey == 2:
                 guildm "You are back, have you checked the graveyard?"
                 menu:
-                    "Yes I have" if visitedgraveyard == 3:
+                    "[abgreen]Yes I have" if visitedgraveyard == 3:
                         guildm "And? Found anything?"
                         MC "Yes....I found"
                         menu:
-                            "{color=#1BBB20}Tell the truth":
+                            "[abgreen]Tell the truth":
                                 MC "There was a Necromancer doing experiments with the corpses"
                                 guildm "What??!! That's... Terrible... I need to find a way to deal with it"
                                 jump v21laststage
@@ -1124,11 +1124,11 @@ label cityguildv21:
     elif gravekey == 2:
         guildm "You are back, have you checked the graveyard?"
         menu:
-            "Yes I have" if visitedgraveyard == 3:
+            "[abgreen]Yes I have" if visitedgraveyard == 3:
                 guildm "And? Found anything?"
                 MC "Yes....I found"
                 menu:
-                    "{color=#1BBB20}Tell the truth":
+                    "[abgreen]Tell the truth":
                         MC "There was a Necromancer doing experiments with the corpses"
                         guildm "What??!! That's... Terrible... I need to find a way to deal with it"
                         jump v21laststage
@@ -1172,7 +1172,7 @@ label graveyardv21:
     else:
 
         menu:
-            "{color=#1BBB20}Try to open the gates":
+            "[abgreen]Try to open the gates":
                 if visitedgraveyard == 0:
                     MC "Let's get inside"
                     "You try to open the gates but they're locked"
@@ -1220,7 +1220,7 @@ label v21necrofight:
     "The skeleton starts to charge you!"
     MC "Shit... what should I do?"
     menu:
-        "Use Destruction{color=#1BBB20} (+1 Destpoint) {image=001battle}" if Destpoints >= 2:
+        "Use Destruction[abgreen] [abdestpoint] {image=001battle}" if Destpoints >= 2:
             scene v021014
             with dissolve
             "You cast a Fireball that hits the skeleton"
@@ -1236,7 +1236,7 @@ label v21necrofight:
 
             jump v21afterskeleton
 
-        "Use Summoning{color=#1BBB20} (+1 Summpoint) {image=001summon}" if Summpoints >= 2:
+        "Use Summoning[abgreen] [absummpoint] {image=001summon}" if Summpoints >= 2:
             scene v021014
             with dissolve
             "You use Unsummon on the skeleton"
@@ -1252,7 +1252,7 @@ label v21necrofight:
 
             jump v21afterskeleton
 
-        "Use Alteration{color=#1BBB20} (+1 Altepoint) {image=001alteration}" if Altepoints >= 2:
+        "Use Alteration[abgreen] [abaltepoint] {image=001alteration}" if Altepoints >= 2:
             scene v021014
             with dissolve
             "You cast Petrification on the skeleton"
@@ -1268,7 +1268,7 @@ label v21necrofight:
 
             jump v21afterskeleton
 
-        "Use Ilusion{color=#1BBB20} (+1 Iluspoint) {image=001illusion}" if Iluspoints >= 2:
+        "Use Illusion[abgreen] [abiluspoint] {image=001illusion}" if Iluspoints >= 2:
             scene v021014
             with dissolve
             "You use fear on the skeleton"
@@ -1280,11 +1280,11 @@ label v21necrofight:
             "The skeleton is scared to death, again. It lays motionless."
             MC "That was...Easy..."
             $ Iluspoints += 1
-            "Your Ilusion skill improved"
+            "Your Illusion skill improved"
 
             jump v21afterskeleton
 
-        "Use Mysticism{color=#1BBB20} (+1 Mystpoint) {image=001myst}" if Mystpoints >= 2:
+        "Use Mysticism[abgreen] [abmystpoint] {image=001myst}" if Mystpoints >= 2:
             scene v021014
             with dissolve
             "You use Telekinesis on the skeleton"
@@ -1301,7 +1301,7 @@ label v21necrofight:
 
             jump v21afterskeleton
 
-        "Use Healing{color=#1BBB20} (+1 Healpoint) {image=001heal}" if Healpoints >= 2:
+        "Use Healing[abgreen] [abhealpoint] {image=001heal}" if Healpoints >= 2:
             scene v021014
             with dissolve
             "You use Cure on the skeleton"
@@ -1317,7 +1317,7 @@ label v21necrofight:
 
             jump v21afterskeleton
 
-        "Use Necromancy{color=#1BBB20} (+1 Necropoint) {image=001necro}" if Necropoints >= 2:
+        "Use Necromancy[abgreen] [abnecropoint] {image=001necro}" if Necropoints >= 2:
             scene v021014
             with dissolve
             "You use Control Undead on the skeleton"
@@ -1507,3 +1507,4 @@ label v21laststage:
     MC "What happened? Am I dead?"
     MC "I can't be... Can I?"
     jump v25
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

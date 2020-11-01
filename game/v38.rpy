@@ -107,7 +107,7 @@ label collegelibraryv38:
         yisnna "And his way to magical discoveries"
 
         menu:
-            "{color=#1BBB20}Can I see it?":
+            "[abgreen]Can I see it?":
                 yisnna "Sure... Here you go"
                 scene v38194
                 with dissolve
@@ -429,7 +429,7 @@ label katroomv38:
         with dissolve
         MC "..."
         menu:
-            "I think you look better like this{color=#FF0000} (+1 Katriona's Corruption)":
+            "I think you look better like this[abcorruptioncolor] [abcorruption]":
                 $ katrionacorr +=1
                 scene v38004
                 with dissolve
@@ -440,7 +440,7 @@ label katroomv38:
                 with dissolve
                 MC "See... I knew I was right..."
                 "Katriona corruption increased"
-            "Sure, let me get it{color=#1BBB20} (+1 Katriona's Love)":
+            "Sure, let me get it[ablovecolor] [ablove]":
 
 
                 $ katrionalove +=1
@@ -845,7 +845,7 @@ label soloingisgood2:
     with dissolve
     "Mida is crying on her bed"
     menu:
-        "{color=#1BBB20}Talk to her":
+        "[abgreen]Talk to her":
             MC "Hello Mida..."
             scene v38064
             with dissolve
@@ -1087,7 +1087,7 @@ label evilpartroomv38:
     "You notice that Fannay is inside"
     MC "What is she doing here?"
     menu:
-        "{color=#1BBB20}Keep watching":
+        "[abgreen]Keep watching":
             scene v38105
             with dissolve
             "It looks like she's looking for something"
@@ -1106,7 +1106,7 @@ label evilpartroomv38:
                     MC "I don't care... I'm out"
                     $ sexv038 = 6
                     jump lustlairv38
-                "Show your presence":
+                "[abgreen]Show your presence":
 
                     MC "So... What is that?"
                     scene v38108
@@ -1274,7 +1274,7 @@ label evilpartroomv38:
                             "You begin to feel your orgasm coming"
                             fannay "AHHH... I can't take it anymore..."
                             menu:
-                                "Cum inside her":
+                                "Cum inside her[abcorruptioncolor] [abpregnantwtf]":
                                     $ fannaypregcount +=1
                                     scene v38138
                                     with dissolve

@@ -126,7 +126,7 @@ label v43version:
         katarro "No doubt... That's one of the soul stones we used years ago"
         ayna "The power inside this stone is incredible... I forgot how much"
         menu:
-            "{color=#1BBB20}But it looks like it's dormant now":
+            "[abgreen]But it looks like it's dormant now":
                 scene v43005
                 with dissolve
                 ayna "What do you mean?"
@@ -366,7 +366,7 @@ label v43courtryo:
         with dissolve
         ryo "I have the time..."
         menu:
-            "{color=#1BBB20}Talk with her about what happened before":
+            "[abgreen]Talk with her about what happened before":
                 scene v38167
                 with dissolve
                 ryo "Look I... wanted to apologize my behavior from before..."
@@ -679,7 +679,7 @@ label v43postdream:
             isabella "Thanks..."
             MC "I'll be right there"
             jump v43findcari
-        "{color=#1BBB20}Isabella got here first":
+        "[abgreen]Isabella got here first":
 
 
             scene v43053
@@ -797,7 +797,7 @@ label v43archmagetalk:
             with dissolve
             yotul "Yotul will train more now"
             yotul "Goodbye"
-        "{color=#1BBB20}Maybe some day":
+        "[abgreen]Maybe some day":
 
             scene v43069
             with dissolve
@@ -871,7 +871,7 @@ label v43bathfannay:
         MC "Uhm..."
 
     menu:
-        "Get the fuck out!":
+        "Get the fuck out![abred] [abnocorruptionlove]":
             scene v43180
             with dissolve
             fannay "Jeez... Ok... I'll leave you and you bath alone"
@@ -885,7 +885,7 @@ label v43bathfannay:
             scene v43178
             with dissolve
             "You are alone in the bath again"
-        "{color=#1BBB20}You're here just for the bath?":
+        "You're here just for the bath?[abcorruptioncolor] [abcorruptionlove]":
 
             scene v43183
             with dissolve
@@ -936,7 +936,7 @@ label v43roomsexscene:
         isabella "[MC]?"
         MC "Isabella?"
         menu:
-            "{color=#1BBB20}Come on in":
+            "[abgreen]Come on in":
                 jump v43isasex
             "Go away, I need to rest":
 
@@ -950,7 +950,7 @@ label v43roomsexscene:
         lili "[MC]?"
         MC "Liliana?"
         menu:
-            "{color=#1BBB20}Come on in":
+            "[abgreen]Come on in":
                 jump v43lilisex
             "Go away, I need to rest":
 
@@ -962,7 +962,7 @@ label v43roomsexscene:
         zordruza "[MC]?"
         MC "Zordruza?"
         menu:
-            "{color=#1BBB20}Come on in":
+            "[abgreen]Come on in":
                 jump v43zorsex
             "Go away, I need to rest":
 
@@ -1295,7 +1295,7 @@ label v43lilisex:
             "She stops sucking and stares at you"
             lili "Who wants to be taken care of?"
             menu:
-                "Assume control of the situation":
+                "Assume control of the situation[abcorruptioncolor] [abcorruption]":
                     $ v43lilidom = 1
                     scene v43131
                     with dissolve
@@ -1382,7 +1382,7 @@ label v43lilisex:
                             MC "Shit.... This was great..."
                             "She cleans up"
                             jump v43liliendsex
-                "Let her play her game":
+                "Let her play her game[ablovecolor] [ablove]":
 
                     $ v43lilidom = 2
                     scene v43141
@@ -1503,7 +1503,7 @@ label v43zorsex:
     with dissolve
     zordruza "Do you like me too?"
     menu:
-        "{color=#1BBB20}Yes I do!":
+        "[abgreen]Yes I do!":
             $ v43endsexwith = "zordruza"
             scene v43156
             with dissolve
@@ -1676,4 +1676,3 @@ label v43breditanecro:
     Bredita "And obey!"
     brutus "Ahhhhnnnn..."
     jump v44script
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

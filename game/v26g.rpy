@@ -485,7 +485,7 @@ label mcroomv2:
         scene v3g057
         with dissolve
         menu:
-            "Kiss her{color=#1BBB20} (+1 Fannay's Love)":
+            "Kiss her[ablovecolor] [ablove]":
                 fannay "Hmmmm, you are a good kisser"
                 scene v3g058
                 with dissolve
@@ -529,7 +529,7 @@ label mcroomv2:
 
                         "Mida love increased, Fannay love decreased"
                         jump afterfannayv3g
-                    "{color=#1BBB20}Let her continue":
+                    "[abgreen]Let her continue":
 
                         scene v3g064
                         with dissolve
@@ -570,7 +570,7 @@ label mcroomv2:
                             $ midacorr += 1
                             "Mida corruption increased"
                             jump afterfannayv3g
-            "Reject her":
+            "Reject her[abred] [abnoloveidiot]":
 
 
 
@@ -697,7 +697,7 @@ label afterfannayv3g:
     with dissolve
     amida "I've missed you, please kiss me!"
     menu:
-        "{color=#1BBB20}Kiss her":
+        "[abgreen]Kiss her":
             amida "mmhmm"
             scene v3g071
             with dissolve
@@ -864,3 +864,4 @@ label aftersexmidav3good:
     with dissolve
     amida "Me too... I'm so relaxed now..."
     jump devilsv3all
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -10,7 +10,7 @@ label v026neutral:
     with dissolve
     isabella "What's wrong? You look strange"
     menu:
-        "It's nothing I just couldn't sleep":
+        "[abgreen]It's nothing I just couldn't sleep":
             scene v26n003
             with dissolve
             isabella "Well, shall we move on then?"
@@ -129,12 +129,12 @@ label v026neutral:
     "You and Isabella sit at the table"
     isabella "I don't trust them... They are very strange..."
     menu:
-        "{color=#1BBB20}Indeed the way they act is very odd...":
+        "[abgreen]Indeed the way they act is very odd...":
             isabella "Maybe it's because she is cheating on her husband?"
             MC "I guess it could be that, who knows"
         "It's probably nothing, just surprised we showed up when we did":
 
-            isabella "Yeah... I wouldn't want to be in her husband shoes..."
+            isabella "Yeah... I wouldn't want to be in her husband's shoes..."
 
     isabella "I'm starving let's eat!"
     scene v26n020
@@ -186,12 +186,12 @@ label v026neutral:
     MC "Thank you very much"
     karl "No problem, it will be 20 gold coins per day, and I need two days in advance, so 40"
     menu:
-        "Wait to see what Isabella do":
+        "Wait to see what Isabella does":
             scene v26n026
             with dissolve
             isabella "Of course, here you go"
             karl "Thank you my lady"
-        "{color=#1BBB20}Offer to pay it yourself":
+        "[abgreen]Offer to pay it yourself":
 
             scene v26n027
             with dissolve
@@ -207,7 +207,7 @@ label v026neutral:
                 $ isabellalove += 2
                 karl "Thank you kind sir"
                 "Isabella likes you more"
-        "Offer to pay half":
+        "[abgreen]Offer to pay half":
 
             scene v26n027
             with dissolve
@@ -238,7 +238,7 @@ label v026neutral:
     "You travel for a couple of hours"
     "You notice that Isabella looks a bit concerned"
     menu:
-        "{color=#1BBB20}Talk with her":
+        "[abgreen]Talk with her":
             MC "Hey Isabella!"
             scene v26n031
             with dissolve
@@ -256,14 +256,14 @@ label v026neutral:
             MC "She can't be the only one who suffered, I bet you feel just as hurt"
             isabella "Yes... My little brother and my father are gone..."
             menu:
-                "You still have her and she still has you, hold to that{color=#1BBB20} (+1 Isabella's Love)":
+                "You still have her and she still has you, hold to that[ablovecolor] [ablove]":
                     scene v26n034
                     with dissolve
                     isabella "You're right... I should be happy that I still have her"
                     isabella "Thank you for that thought"
                     $ isabellalove += 1
                     "Isabella likes you more"
-                "Well I lost everyone and you don't see me cry":
+                "Well I lost everyone and you don't see me cry[abred] [abnoloveidiot]":
 
                     scene v26n035
                     with dissolve
@@ -332,7 +332,7 @@ label v026neutral:
             sol "Ahahahah.... Stop it... Ahahaha"
             MC "But I haven't finished yet..."
             "Before you could say anything else"
-        "Use Illusion to trick him {image=001illusion}":
+        "[abgreen]Use Illusion to trick him {image=001illusion}":
 
 
 
@@ -415,7 +415,7 @@ label v026neutral:
     with dissolve
     MC "What?!!"
     isabella "Are you okay? I was worried... I was meditating then I heard you scream"
-    "You are still in shock and speachless"
+    "You are still in shock and speechless"
     scene v26n060
     with dissolve
     isabella "There... Calm down... Everything is fine"
@@ -458,7 +458,7 @@ label v026neutral:
     villager "Not right now... But every night we are attacked"
     villager "Every night they attack and take some of us to turn into vampires"
     menu:
-        "We can help you{color=#1BBB20} (+1 Alignment)":
+        "We can help you[abgreen] [abalignment]":
             scene v26n066
             with dissolve
             villager "Really how??"
@@ -541,7 +541,7 @@ label forest1v026:
     with dissolve
     isabella "There must be a way to the mountains here, should we look around?"
     menu:
-        "{color=#1BBB20}Yes let's look around":
+        "[abgreen]Yes let's look around":
             $ dice = renpy.random.randint(1, 8)
             if dice <= 2:
                 scene v26n113
@@ -585,7 +585,7 @@ label riverv026:
     isabella "This is a nice place, look the River is almost frozen solid!"
     isabella "Do you want to look around?"
     menu:
-        "{color=#1BBB20}Yes, let's see what we can find":
+        "[abgreen]Yes, let's see what we can find":
             $ dice = renpy.random.randint(1, 4)
             if dice >= 3:
                 scene v26n113
@@ -615,7 +615,7 @@ label mountainv026:
     with dissolve
     isabella "There seems to be an entrance there, should we look inside?"
     menu:
-        "{color=#1BBB20}Yes! Let's go":
+        "[abgreen]Yes! Let's go":
             jump vampiresnestv026
         "No, let's look some place else":
 
@@ -677,7 +677,7 @@ label vampiresnestv026:
             scene black
             with dissolve
             "You are knocked unconscious"
-        "{color=#1BBB20}Surrender":
+        "[abgreen]Surrender":
 
 
             MC "They are right... We can't beat them..."
@@ -705,7 +705,7 @@ label vampiresnestv026:
     vampire "You say that... like you have a choice, ahahaha"
     $ vampcount = 0
     menu:
-        "Where is Isabella?":
+        "[abgreen]Where is Isabella?":
             vampire "You should worry about yourself now..."
             $ enemy = "Vampire"
             scene v26n085
@@ -740,7 +740,7 @@ label jaildoorsv26:
         "Try the door on the right":
             "It's locked, and looks like an empty cell"
             jump jaildoorsv26
-        "{color=#1BBB20}Try the door to the front":
+        "[abgreen]Try the door to the front":
             "You open the door to the front"
             jump jaildoorsv26x
 
@@ -768,7 +768,7 @@ label jaildoorsv26xx:
         "Try the door on the right":
             "It's locked, and looks like an empty cell"
             jump jaildoorsv26xx
-        "{color=#1BBB20}Try the door to the front":
+        "[abgreen]Try the door to the front":
             "You open the door to the front"
             jump jaildoorsv26xxx
 
@@ -807,30 +807,30 @@ label MVampireendv26:
     nvl clear
 
     menu:
-        "Raise Battlemagic{color=#1BBB20} (+1 Destpoint) {image=001battle}":
+        "Raise Battlemagic[abgreen] [abdestpoint] {image=001battle}":
             $ Destpoints += 1
             "Your Battlemagic skill improved"
-        "Raise Summoning{color=#1BBB20} (+1 Summpoint) {image=001summon}":
+        "Raise Summoning[abgreen] [absummpoint] {image=001summon}":
 
             $ Summpoints += 1
             "Your Summoning skill improved"
-        "Raise Alteration{color=#1BBB20} (+1 Altepoint) {image=001alteration}":
+        "Raise Alteration[abgreen] [abaltepoint] {image=001alteration}":
 
             $ Altepoints += 1
             "Your Alteration skill improved"
-        "Raise Ilusion{color=#1BBB20} (+1 iluspoint) {image=001illusion}":
+        "Raise Illusion[abgreen] [abiluspoint] {image=001illusion}":
 
             $ Iluspoints += 1
-            "Your Ilusion skill improved"
-        "Raise Mysticism{color=#1BBB20} (+1 Mystpoint) {image=001myst}":
+            "Your Illusion skill improved"
+        "Raise Mysticism[abgreen] [abmystpoint] {image=001myst}":
 
             $ Mystpoints += 1
             "Your Mysticism skill improved"
-        "Raise Healing{color=#1BBB20} (+1 Healpoint) {image=001heal}":
+        "Raise Healing[abgreen] [abhealpoint] {image=001heal}":
 
             $ Healpoints += 1
             "Your Healing skill improved"
-        "Raise Necromancy{color=#1BBB20} (+1 Necropoint) {image=001necro}":
+        "Raise Necromancy[abgreen] [abnecropoint] {image=001necro}":
 
             $ Necropoints += 1
             "Your Necromancy skill improved"
@@ -848,7 +848,7 @@ label MVampireendv26:
     mvamp01 "I'll do anything if you let me go"
     $ mvampiredead = 0
     menu:
-        "{color=#1BBB20}Anything?":
+        "[abgreen]Anything?":
 
             mvamp01 "Yes..."
             "She gets close to you and removes your robe"
@@ -857,7 +857,7 @@ label MVampireendv26:
             "Then she gets on her knees..."
             mvamp01 "Wow... Look what we have here..."
             menu:
-                "{color=#1BBB20}What are you waiting for?":
+                "[abgreen]What are you waiting for?":
                     scene v26n100
                     with dissolve
                     mvamp01 "Hmmm... Such a large dick we have here..."
@@ -894,7 +894,7 @@ label MVampireendv26:
                     "You're still recovering from your orgasm"
                     "And you see the Vampire run away.."
                     menu:
-                        "Kill her!{color=#FF0000} (-1 Alignment)":
+                        "Kill her![abred] [abnoalignment]":
                             MC "Oh no you don't bitch!"
                             $ mvampiredead = 1
                             $ Points -= 1
@@ -953,7 +953,7 @@ label MVampireendv26:
             with dissolve
             "And you see her run away"
             menu:
-                "Kill her!{color=#FF0000} (-1 Alignment)":
+                "Kill her![abred] [abnoalignment]":
                     MC "Oh no you don't bitch!"
                     $ Points -= 1
                     $ mvampiredead = 1
@@ -999,7 +999,7 @@ label isabellav026vamps:
             "You and Isabella return to the village"
 
             jump villagepostvamps
-        "{color=#1BBB20}Let me just check this book first":
+        "[abgreen]Let me just check this book first":
 
             isabella "Ok, no problem"
             "You read the book and you find a spell"
@@ -1024,13 +1024,13 @@ label villagepostvamps:
     isabella "[MC] here did it! He took care of the Master Vampire"
     alice "Great!! That's awesome! We are safe thanks to you!"
     menu:
-        "I couldn't have done it without Isabella{color=#1BBB20} (+1 Isabella's Love)":
+        "I couldn't have done it without Isabella[ablovecolor] [ablove]":
             $ isabellalove += 1
             "Isabella likes you more"
         "Do we get a reward?":
 
             alice "Of course, we will talk about that tomorrow"
-        "Nothing challenging to be honest...":
+        "Nothing challenging to be honest...[abred] [abnoloveidiot]":
 
 
             $ isabellalove -= 1
@@ -1082,9 +1082,9 @@ label v026neutralpart2:
     with dissolve
     MC "What??"
     menu:
-        "{color=#1BBB20}Kiss her":
+        "Kiss her":
             isabella "Mwuah"
-        "Refuse":
+        "[abgreen]Refuse":
 
             MC "Look.. I can't..."
             scene v26n124
@@ -1114,7 +1114,7 @@ label v026neutralpart2:
     isabella "I really miss him... Sometimes it makes me cry for hours..."
     isabella "When I remember what happened to us..."
     menu:
-        "If you'll feel better, you can talk to me{color=#1BBB20} (+1 Isabella's Love)":
+        "If you'll feel better, you can talk to me[abgreen]":
             scene v26n129
             with dissolve
             isabella "Really? You are too kind"
@@ -1197,7 +1197,7 @@ label v026neutralpart2:
     "She lies on the bed and falls asleep..."
     MC "What just happened?... Should I try to do something to her?"
     menu:
-        "Try to feel her breasts{color=#FF0000} (-1 Alignment)":
+        "Try to feel her breasts[abred] [abnoalignment]":
             "She's asleep I might as well have some fun"
             $ Points -= 1
             "You lost 1 point"
@@ -1212,7 +1212,7 @@ label v026neutralpart2:
             with dissolve
             isabella "I'm trying to at least"
             "That was close, you better sleep now"
-        "Try to sleep{color=#1BBB20} (+1 Alignment)":
+        "Try to sleep[abgreen] [abalignment]":
 
 
             MC "I like Isabella too much to do that, I better get to sleep"

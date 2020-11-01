@@ -89,14 +89,14 @@ label v031neutral:
     alice "I'm sure it will fit you nicely"
     alice "I would love to see you try it on for me sometime..."
     menu:
-        "I would love for you to see me dressing, maybe more..":
+        "I would love for you to see me dressing, maybe more..[abred] [abnoloveidiot]":
             scene v31n013
             with dissolve
             alice "Hmmm what an interesting idea..."
             isabella "..."
             $ isabellalove -= 1
             "Isabella likes you less"
-        "I'm sure you'll see it someday{color=#1BBB20} (+1 Isabella's Love)":
+        "I'm sure you'll see it someday[ablovecolor] [ablove]":
 
             scene v31n012
             with dissolve
@@ -195,7 +195,7 @@ label v031neutral:
     isabella "I know it's selfish of me to bring you with me"
     isabella "Knowing what you faced when you were a kid..."
     menu:
-        "Nonsense, I'm here because I want you to find your mother{color=#1BBB20} (+1 Isabella's Love)":
+        "Nonsense, I'm here because I want you to find your mother[ablovecolor] [ablove]":
             scene v31n025
             with dissolve
             "She get's really close to you"
@@ -217,7 +217,7 @@ label v031neutral:
                 MC "What was that?"
                 isabella "I really wanted to do that {i}giggle{/i}"
                 jump v31forrest
-        "Yeah, And you don't see me crying about that":
+        "Yeah, And you don't see me crying about that[abred] [abnoloveidiot]":
 
 
 
@@ -284,30 +284,30 @@ label v3killedslayers:
 
 
     menu:
-        "Raise Battlemagic{color=#1BBB20} (+1 Destpoint) {image=001battle}":
+        "Raise Battlemagic[abgreen] [abdestpoint] {image=001battle}":
             $ Destpoints += 1
             "Your Battlemagic skill improved"
-        "Raise Summoning{color=#1BBB20} (+1 Summpoint) {image=001summon}":
+        "Raise Summoning[abgreen] [absummpoint] {image=001summon}":
 
             $ Summpoints += 1
             "Your Summoning skill improved"
-        "Raise Alteration{color=#1BBB20} (+1 Altepoint) {image=001alteration}":
+        "Raise Alteration[abgreen] [abaltepoint] {image=001alteration}":
 
             $ Altepoints += 1
             "Your Alteration skill improved"
-        "Raise Ilusion{color=#1BBB20} (+1 Iluspoint) {image=001illusion}":
+        "Raise Illusion[abgreen] [abiluspoint] {image=001illusion}":
 
             $ Iluspoints += 1
-            "Your Ilusion skill improved"
-        "Raise Mysticism{color=#1BBB20} (+1 Mystpoint) {image=001myst}":
+            "Your Illusion skill improved"
+        "Raise Mysticism[abgreen] [abmystpoint] {image=001myst}":
 
             $ Mystpoints += 1
             "Your Mysticism skill improved"
-        "Raise Healing{color=#1BBB20} (+1 Healpoint) {image=001heal}":
+        "Raise Healing[abgreen] [abhealpoint] {image=001heal}":
 
             $ Healpoints += 1
             "Your Healing skill improved"
-        "Raise Necromancy{color=#1BBB20} (+1 Necropoint) {image=001necro}":
+        "Raise Necromancy[abgreen] [abnecropoint] {image=001necro}":
 
             $ Necropoints += 1
             "Your Necromancy skill improved"
@@ -422,7 +422,7 @@ label v3killedslayers:
             scene v31n116
             with dissolve
             sis "Sounds like you are..."
-        "{color=#1BBB20}You will protect me won't you?":
+        "[abgreen]You will protect me won't you?":
             scene v31n117
             with dissolve
             sis "Ahaahah funny"
@@ -537,7 +537,7 @@ label v3killedslayers:
     katla "Good to know that her boyfriend is not only cute but also talented"
     isabella "Mom!"
     menu:
-        "I don't know about that, all I know is that she is beautiful and skilled{color=#1BBB20} (+1 Isabella's Love)":
+        "I don't know about that, all I know is that she is beautiful and skilled[ablovecolor] [ablove]":
             scene v31n058
             with dissolve
             katla "And a gentleman I see"
@@ -586,7 +586,7 @@ label v3killedslayers:
     with dissolve
 
     menu:
-        "{color=#1BBB20}Kiss her":
+        "[abgreen]Kiss her":
             scene v31n068
             with dissolve
             isabella "Hmmm"
@@ -647,7 +647,7 @@ label v3killedslayers:
                             with dissolve
                             MC "Much better"
                             jump v3notknowisa
-                        "{color=#1BBB20}I think you're my sister":
+                        "I think you're my sister":
 
 
                             scene v31n069
@@ -674,7 +674,7 @@ label v3killedslayers:
                             isabella "I... this is too much..."
 
                             jump v3sheknowsisa
-                "Tell her that you think she is you sister":
+                "[abgreen]Tell her that you think she is you sister":
 
 
                     scene v31n069
@@ -1112,11 +1112,11 @@ label v3morningmom:
     katla "Good to see you Irgodon, did everyone decide to come look for me?"
     irgodon "Well, you're one of us, no one would rest until we found you"
     menu:
-        "{color=#1BBB20}Good to see you Irgodon":
+        "Good to see you Irgodon":
             scene v31n108
             with dissolve
             irgodon "Oh... You again..."
-        "Have you finished? Can we go now?":
+        "Have you finished? Can we go now?[abred] [abnoloveidiot]":
 
             scene v31n109
             with dissolve
@@ -1255,3 +1255,4 @@ label neutralis1year:
     scene black
     with dissolve
     jump lichthehellout
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -55,7 +55,7 @@ label v026evil:
         with dissolve
         amida "I try, but you seem to get all the attention everytime..."
         menu:
-            "You get all my attention dear{color=#1BBB20} (+1 Mida's Love)":
+            "You get all my attention dear[ablovecolor] [ablove]":
                 $ midalove +=1
                 amida "Aww... Such a gentleman..."
                 "Mida likes you more"
@@ -89,11 +89,11 @@ label v026evil:
         with dissolve
         Bredita "... Activities... Right [MC]?"
         menu:
-            "Of course... I'm sure it would be fun...{color=#1BBB20} (+1 Mida's Corruption/Bredita Love)":
+            "Of course... I'm sure it would be fun...[abcorruptioncolor] [abmidabreditalovecorruption]":
                 $ midacorr +=1
                 $ breditalove +=1
                 "Mida corruption increased, Bredita likes you more"
-            "That's something that she should decide not me{color=#1BBB20} (+1 Mida's Love)":
+            "That's something that she should decide not me[ablovecolor] [abmidalove]":
                 $ midalove +=1
                 "Mida likes you more"
         scene v3e008
@@ -202,11 +202,11 @@ label v026evil:
     MC "And you chose a housefly?"
     lili "Would you prefer to be raped by something else?"
     menu:
-        "I'm not a fan of being raped really{color=#1BBB20} (+1 Lili's Love)":
+        "I'm not a fan of being raped really[ablovecolor] [ablove]":
             lili "Ahahaha you can be funny after all"
             $ lililove += 1
             "Liliana likes you more"
-        "I wouldn't mind being raped by you...{color=#FF0000} (+1 Lili's Corruption)":
+        "I wouldn't mind being raped by you...[abcorruptioncolor] [abcorruption]":
             lili "Ahahah you can be funny after all"
             $ lilicorr += 1
             "Liliana corruption increased"
@@ -412,36 +412,36 @@ label Necromancerendv3e:
     n "Since you won, you can choose a skill to upgrade"
 
     menu:
-        "Raise Battlemagic{color=#1BBB20} (+1 Destpoint) {image=001battle}":
+        "Raise Battlemagic[abgreen] [abdestpoint] {image=001battle}":
             $ Destpoints += 1
             "Your Battlemagic skill improved"
             jump postcombatskillsv3e
-        "Raise Summoning{color=#1BBB20} (+1 Summpoint) {image=001summon}":
+        "Raise Summoning[abgreen] [absummpoint] {image=001summon}":
 
             $ Summpoints += 1
             "Your Summoning skill improved"
             jump postcombatskillsv3e
-        "Raise Alteration{color=#1BBB20} (+1 Altepoint) {image=001alteration}":
+        "Raise Alteration[abgreen] [abaltepoint] {image=001alteration}":
 
             $ Altepoints += 1
             "Your Alteration skill improved"
             jump postcombatskillsv3e
-        "Raise Ilusion{color=#1BBB20} (+1 Iluspoint) {image=001illusion}":
+        "Raise Illusion[abgreen] [abiluspoint] {image=001illusion}":
 
             $ Iluspoints += 1
-            "Your Ilusion skill improved"
+            "Your Illusion skill improved"
             jump postcombatskillsv3e
-        "Raise Mysticism{color=#1BBB20} (+1 Mystpoint) {image=001myst}":
+        "Raise Mysticism[abgreen] [abmystpoint] {image=001myst}":
 
             $ Mystpoints += 1
             "Your Mysticism skill improved"
             jump postcombatskillsv3e
-        "Raise Healing{color=#1BBB20} (+1 Healpoint) {image=001heal}":
+        "Raise Healing[abgreen] [abhealpoint] {image=001heal}":
 
             $ Healpoints += 1
             "Your Healing skill improved"
             jump postcombatskillsv3e
-        "Raise Necromancy{color=#1BBB20} (+1 Necropoint) {image=001necro}":
+        "Raise Necromancy[abgreen] [abnecropoint] {image=001necro}":
 
             $ Necropoints += 1
             "Your Necromancy skill improved"
@@ -472,7 +472,7 @@ label postcombatskillsv3e:
     MC "She looks familiar somehow... What should I do?"
     MC "Should I try to heal her or take the opportunity to play with her body?"
     menu:
-        "Try to heal her{color=#1BBB20} (+1 Alignment)":
+        "Try to heal her[abgreen] [abalignment]":
             scene v3e060
             with dissolve
             MC "Let's try to heal her..."
@@ -480,7 +480,7 @@ label postcombatskillsv3e:
             $ Points += 1
             "You gained 1 point"
             MC "Let's carry her to a more comfortable place"
-        "Play with her body":
+        "Play with her body[abred] [abnoalignment]":
 
 
             scene v3e061
@@ -518,13 +518,13 @@ label postcombatskillsv3e:
     MC "Oh... Hi Liliana...I think I found who we were looking for"
     lili "Oh really? Why is she naked?"
     menu:
-        "I was about to fuck her but you showed up...":
+        "I was about to fuck her but you showed up...[abred] [abnoloveidiot]":
             scene v3e071
             with dissolve
             lili "What?! That's not funny you know?"
             $ lililove -= 1
             "Liliana likes you less"
-        "{color=#1BBB20}I found her like this, we need to help her":
+        "I found her like this, we need to help her":
 
             scene v3e070
             with dissolve
@@ -558,11 +558,11 @@ label v026evilpart2:
     with dissolve
     lili "We did a great job, don't you think?"
     menu:
-        "I found her! I did a great job!":
+        "I found her! I did a great job![abred] [abnoloveidiot]":
             $ lililove -= 1
             "Liliana likes you less"
             lili "Yeah... right..."
-        "We make a great team together!{color=#1BBB20} (+1 Lili's Love)":
+        "We make a great team together![ablovecolor] [ablove]":
             $ lililove += 1
             "Liliana likes you more"
             lili "Yes we do..."
@@ -764,7 +764,7 @@ label liliroomv3e:
         "You can see Liliana in her room"
         "Should you talk to her?"
         menu:
-            "{color=#1BBB20}Yes, talk to her":
+            "[abgreen]Yes, talk to her":
                 MC "Hey there!"
                 scene v3e121
                 with dissolve
@@ -790,7 +790,7 @@ label liliroomv3e:
                     MC "That's not what I meant, why did you kiss me?"
                     lili "Because I felt like it, didn't you liked it?"
                     menu:
-                        "It was nice...{color=#1BBB20} (+1 Lili's Love)":
+                        "It was nice...[ablovecolor] [ablove]":
                             scene v3e125
                             with dissolve
                             lili "Ahahah you're cute"
@@ -869,7 +869,7 @@ label yourroomv3e:
             MC "Yes she is, but don't believe everything you've been told about her"
             amida "I don't like the way she looks at me..."
             menu:
-                "I would never let anything happen to you!{color=#1BBB20} (+1 Mida's Love)":
+                "I would never let anything happen to you![ablovecolor] [ablove]":
                     scene v3e083
                     with dissolve
                     amida "Oh [MC] my love... Thank you..."

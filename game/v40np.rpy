@@ -367,7 +367,7 @@ label v4portaltime:
     with dissolve
     rolf "I... Failed my people..."
     menu:
-        "Rolf, it's not your fault{color=#1BBB20} (+1 Alignment)":
+        "Rolf, it's not your fault[abgreen] [abalignment]":
             MC "We don't know what happened here"
             MC "You can't blame yourself"
             $ Points += 1
@@ -375,7 +375,7 @@ label v4portaltime:
         "Say nothing":
 
             MC "..."
-        "Yeah, you did{color=#FF0000} (-1 Alignment)":
+        "Yeah, you did[abred] [abnoalignment]":
 
             MC "Yeah... You should have come here sooner"
             $ Points -= 1
@@ -506,7 +506,7 @@ label v40midaroom:
         "Your vision is drawn to her perfect ass"
         "Should you do something about it?"
         menu:
-            "Feel her ass":
+            "[abgreen]Feel her ass":
                 MC "I can't resist..."
                 scene v4155
                 with dissolve
@@ -520,7 +520,7 @@ label v40midaroom:
                     amida "Now you try to grope me, that's what!"
                     "She's right you know"
                     menu:
-                        "{color=#1BBB20}Apologize":
+                        "[abgreen]Apologize":
                             $ midaforgive = 1
                             MC "Look... I'm done nothing but regret it... I made a mistake"
                             scene v4156
@@ -583,7 +583,7 @@ label v40midaroom:
         "Your vision is drawn to her perfect ass"
         "Should you do something about it?"
         menu:
-            "{color=#1BBB20}Feel her ass":
+            "[abgreen]Feel her ass":
                 MC "I can't resist..."
                 scene v4155
                 with dissolve
@@ -613,7 +613,7 @@ label v40midapostdress:
     with dissolve
     amida "All set, ready to go"
     menu:
-        "Wow... That's a badass robe{color=#1BBB20} (+1 Mida's Love)" if midaown != 2:
+        "Wow... That's a badass robe[ablovecolor] [ablove]" if midaown != 2:
             amida "Right?"
             scene v4159
             with dissolve
@@ -717,7 +717,7 @@ label v4dock:
             "I don't have time for this...":
                 MC "Right... Bye.."
                 jump v4allesterramap
-            "{color=#1BBB20}Mock you? Why would I mock you?":
+            "[abgreen]Mock you? Why would I mock you?":
 
                 scene v2056
                 with dissolve
@@ -738,7 +738,7 @@ label v4dock:
                     "We don't have time for this":
                         MC "Let's go..."
                         jump v4allesterramap
-                    "{color=#1BBB20}Sure, what's the problem?":
+                    "[abgreen]Sure, what's the problem?":
 
                         $ v4helpdwarf = 1
                         dwarf "You'll help me?"
@@ -773,7 +773,7 @@ label v4dock:
                         MC "Exactly that, sorcery. I made the rats leave with a spell."
                         dwarf "I... Here... Have some payment"
                         menu:
-                            "Thank you{color=#1BBB20} (+1 Alignment/+10 Gold)":
+                            "Thank you[abgreen] [abalignment] [abgold10]":
                                 $ Points += 1
                                 $ Gold += 10
                                 play sound "sounds/coin.ogg"
@@ -785,7 +785,7 @@ label v4dock:
                                 amida "See you litte man"
                                 dwarf "Little... You..."
                                 jump v4allesterramap
-                            "Thank you but keep it, I don't need it{color=#1BBB20} (+2 Alignment)":
+                            "Thank you but keep it, I don't need it[abgreen] [abalignment2]":
 
                                 dwarf "Really?"
                                 $ Points += 2
@@ -797,7 +797,7 @@ label v4dock:
                                 amida "See you litte man"
                                 dwarf "Little... You..."
                                 jump v4allesterramap
-                            "10 Gold! What is this joke?!{color=#FF0000} (-1 Alignment/+17 Gold)":
+                            "10 Gold! What is this joke?![abred] [abnoalignment] [abgold17]":
 
                                 MC "You better cough up some more!"
                                 dwarf "I... Here, that's... All I have..."
@@ -818,7 +818,7 @@ label v4forestallesterra:
     with dissolve
     "You're at the forest"
     menu:
-        "{color=#1BBB20}Look around the forest":
+        "[abgreen]Look around the forest":
             $ event_dice = renpy.random.randint(1, 3)
             if event_dice == 1:
                 "As you are looking around the forest"
@@ -864,7 +864,7 @@ label v4cityallesterra:
                 with dissolve
                 MC "You were lucky... This time..."
                 jump v4allesterramap
-            "{color=#1BBB20}Leave":
+            "[abgreen]Leave":
                 jump v4allesterramap
     else:
 
@@ -1152,7 +1152,7 @@ label v4runartalk:
             amida "I'm horny [MC], and it's all your fault"
             amida "What do you have to say in your defense?"
             menu:
-                "I think we should go to sleep now":
+                "I think we should go to sleep now[abred] [abnocorruptionlove]":
                     scene v41095
                     with dissolve
                     amida "I... Ok fine..."
@@ -1164,7 +1164,7 @@ label v4runartalk:
                     scene black
                     with dissolve
                     jump v41morningmida
-                "{color=#1BBB20}I think I'd like to see proof of this horniness":
+                "[abgreen]I think I'd like to see proof of this horniness":
                     label galleryScene5:
                     $ fuckmidadouble = 1
                     amida "You do?"
@@ -1327,14 +1327,14 @@ label v4runartalk:
                     MC "Fuck... This was the best thing ever..."
                     amida "Do you want me to act more like a slut for you?"
                     menu:
-                        "Hell yeah! You're my dirty slut{color=#FF0000} (+1 Mida's Corruption)":
+                        "Hell yeah! You're my dirty slut[abcorruptioncolor] [abcorruption]":
                             amida "Hmmm this cum... so tasty"
                             "She cleans all the cum on her face and puts it on her mouth"
                             amida "Your slut loves to swallow your cum"
                             $ midacorr +=1
                             $ fuckmidadouble = 2
                             "Mida corruption increased"
-                        "I like the romantic way more{color=#1BBB20} (+1 Mida's Love)":
+                        "I like the romantic way more[ablovecolor] [ablove]":
 
                             "She cleans all the cum on her face"
                             scene v41119
@@ -1559,7 +1559,7 @@ label v4roomstonecontrol:
     akoneko "I promise... I... Maybe..."
     akoneko "The four of us can go to the City together and get a drink some time soon?"
     menu:
-        "I'd like that a lot{color=#1BBB20} (+1 Koneko's Love)":
+        "I'd like that a lot[ablovecolor] [ablove]":
             scene v41059
             with dissolve
             $ konekolove +=1
@@ -1648,7 +1648,7 @@ label v4roomstonecontrol:
     Nonen "Don't you want the pain to end? Don't you want power?"
     Nonen "Let's go to the portal room!"
     menu:
-        "Yes I want more power!{color=#FF0000} (-1 Alignment/+2 stoneuses)":
+        "Yes I want more power![abkarmacolor] [abstoneuses2]":
             $ stoneuses += 2
             Nonen "Good... To the portal room..."
             stop music
@@ -1666,7 +1666,7 @@ label v4roomstonecontrol:
             $ v4resist = 0
             $ renpy.movie_cutscene("opti/portal.webm")
             jump v4slayercity
-        "Yes... Make the pain go away{color=#FF0000} (+1 stoneuses)":
+        "Yes... Make the pain go away[abkarmacolor] [abstoneuses]":
 
             $ stoneuses += 1
             Nonen "Good... To the portal room..."
@@ -1683,7 +1683,7 @@ label v4roomstonecontrol:
             $ v4resist = 0
             $ renpy.movie_cutscene("opti/portal.webm")
             jump v4slayercity
-        "Resist the stone temptation{color=#1BBB20} (+1 Alignment)":
+        "Resist the stone temptation[abgreen] [abalignment]":
 
             $ Points += 1
             "You gained 1 point"
@@ -1751,7 +1751,7 @@ label v4slayersoldier:
                 sol "You are on Saciorona! One of our great cities"
                 sol "Now move along I don't have time for you"
                 jump v4slayerplaza_1
-            "Use Fear on the soldier{color=#1BBB20} (+10 Gold)":
+            "Use Fear on the soldier[abgreen] [abgold10]":
                 $ v4soldiergone = 1
                 "You start to cast fear on the soldier"
                 scene v4120
@@ -1814,7 +1814,7 @@ label v4tavernday:
     with dissolve
     "It's a tavern"
     menu:
-        "Talk with the Tavern keeper":
+        "[abgreen]Talk with the Tavern keeper":
             if v4visiteon == 0:
                 $ v4visiteon = 1
                 scene v4145
@@ -1894,7 +1894,7 @@ label v4tavernday:
                 keeper "Hello again"
                 keeper "What can I get you? Mead for 1 coin?"
             menu:
-                "I could use a drink{color=#FF0000} (-1 Gold)" if Gold >=1:
+                "I could use a drink[abred] [abnogold]" if Gold >=1:
                     scene v4146
                     with dissolve
                     keeper "There you go!"
@@ -2111,14 +2111,14 @@ label v4itsnight:
         jump v4tavernstone
 
     menu:
-        "Go talk with the guard" if v4soldiergone != 3:
+        "[abgreen]Go talk with the guard" if v4soldiergone != 3:
             scene v4122
             with dissolve
             sol "What do you want?"
             menu:
                 "Nothing... I'm leaving":
                     jump v4itsnight
-                "Use magic to mess with the guard{color=#1BBB20} (+15 Gold)":
+                "Use magic to mess with the guard[abgreen] [abgold15]":
 
                     scene v4123
                     with dissolve
@@ -2179,7 +2179,7 @@ label v4itsnight:
             MC "Actually I was looking for a place to stay"
             hanna "Really? Did you not remember me offering my place? It's still available"
             menu:
-                "Accept{color=#1BBB20} (+1 Hanna's Love)":
+                "Accept[ablovecolor] [ablove]":
                     MC "That would be great!"
                     hanna "Let's go then?"
                     scene v4162
@@ -2282,7 +2282,7 @@ label v4hannahousenight:
         menu:
             "Not really, I want to sleep":
                 jump v4sleeptime
-            "{color=#1BBB20}You bet I want to":
+            "[abgreen]You bet I want to":
 
                 scene v4025
                 with dissolve
@@ -2303,7 +2303,7 @@ label v4hannahousenight:
         with dissolve
         MC "It's ok... I don't mind..."
         menu:
-            "{color=#1BBB20}Try to seduce her":
+            "[abgreen]Try to seduce her":
                 "Did you enjoyed what you saw?"
                 jump v4seducehanna
             "Go to sleep":
@@ -2315,7 +2315,7 @@ label v4hannahousenight:
     else:
 
         menu:
-            "{color=#1BBB20}Try to seduce her":
+            "[abgreen]Try to seduce her":
                 jump v4seducehanna
             "Go to sleep":
 
@@ -2881,7 +2881,7 @@ label v4baths2:
             "She bucks her hips back against you harder as the pleasure becomes more intense"
             "She fully submits to you, reaching both arms straight back"
             jump v4question3some
-        "Allow the stone to take over her mind":
+        "Allow the stone to take over her mind[abred] [abnoalignment2] [abstoneuses]":
 
             $ stoneuses += 1
             $ calessapet = 1
@@ -2899,7 +2899,7 @@ label v4baths2:
             Nonen "Yes! Let's control her! Let's make her our slave!"
             "Do you give into this temptation?"
             menu:
-                "Yes{color=#FF0000} (-5 Alignment/+2 stoneuses)":
+                "Yes[abred] [abnoalignment5] [abstoneuses2]":
                     $ stoneuses += 2
                     "You seize upon the opportunity, making Calessa utterly devoted to you. Forever"
                     Nonen "Ahaha! Let's make this whore our slave! Forever!"
@@ -2992,7 +2992,7 @@ label v4question3some:
     "Calessa looks back at you again, this time with a suggestive smile..."
     "Do you want to try to convince the girl at the door to join you for a threesome?"
     menu:
-        "{color=#1BBB20}Yes!!!":
+        "[abgreen]Yes!!!":
             jump v43somehanna
         "No":
 
@@ -3510,7 +3510,7 @@ label v4brothelpart:
                 with dissolve
                 "You follow her upstairs"
                 jump v4fuck50room
-            "Use the stone to briefly control her mind{color=#FF0000} (-1 Alignment)":
+            "Use the stone to briefly control her mind[abred] [abnoalignment]":
 
                 $ Points -=1
                 $ v4calessabrothelfun = 2
@@ -3634,7 +3634,7 @@ label v4fuckpetroom:
     cal "Oh, you make me so hot! I can't take it anymore, I need to feel you no."
     "Please, stop teasing me and let me have it, Master..."
     menu:
-        "{color=#1BBB20}Tease her more":
+        "[abgreen]Tease her more":
             jump v4teasehermore
         "Give it to her already":
             jump v4dontteaseher
@@ -3733,7 +3733,7 @@ label v4fuck50room:
     cal "Should I get it wet before we start, baby?"
     cal "I'm told I can do wonderous things with my mouth..."
     menu:
-        "{color=#1BBB20}Yes":
+        "[abgreen]Yes":
             jump v4bjcal
         "Give me the pussy already":
             jump v4calmainevent

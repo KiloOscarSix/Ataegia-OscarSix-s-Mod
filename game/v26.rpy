@@ -1,4 +1,4 @@
-label v026:
+﻿label v026:
     scene meanwhile
     with dissolve
     scene meanwhile
@@ -168,8 +168,8 @@ label v026:
 
         elif wheretoafterslayerbath == "Evil":
             jump v026evilpart2
-        else:
 
+        else:
             jump v026goodpart2
 
 label devilsv3all:
@@ -246,6 +246,6 @@ label devilsv3all:
 
     elif wheretoafterslayerbath == "Evil":
         jump v031evil
-    else:
 
+    else:
         jump v031good

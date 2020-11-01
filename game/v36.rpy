@@ -568,7 +568,7 @@ label v36afterdream:
     aelia "So are you ready to trust me? Are you ready to have all the pleasure in the world?"
     "Are you ready to trust her? Do you want to have all the pleasures in the world?"
     menu:
-        "Yes":
+        "Yes[abgreen] [abendings]":
             jump end_1_nothing_else_matters
         "No":
 
@@ -711,12 +711,12 @@ label v36afterlust:
     elf "I'm really sorry sir..."
     elf "And my apologizes to you too young man"
     menu:
-        "Fuck you asshole!!{color=#FF0000} (-1 Alignment)":
+        "Fuck you asshole!![abred] [abnoalignment]":
             elf "..."
             MC "You're lucky Katarro showed up or you would be dead now..."
             $ Points -= 1
             "You got -1 point"
-        "No problem, you are doing your job{color=#1BBB20} (+1 Alignment)":
+        "No problem, you are doing your job[abgreen] [abalignment]":
 
             elf "Thank you sir"
             MC "No problem"
@@ -740,3 +740,4 @@ label v36afterlust:
     ayna "I'm so glad to see you... Tell me what happened to you"
 
     jump vers037
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

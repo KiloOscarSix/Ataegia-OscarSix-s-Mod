@@ -284,7 +284,7 @@ label v39:
     ayna "But we can't assume that every Slayer citizen is... responsible"
     ayna "For what the armies are doing, what their leader is doing"
     menu:
-        "Agree with Ayna{color=#1BBB20} (+1 Ayna's Love)":
+        "Agree with Ayna[ablovecolor] [abaynalove]":
             scene v39062a
             with dissolve
             MC "Or even if they are being controlled by demons or not"
@@ -292,7 +292,7 @@ label v39:
             $ aynalove += 1
             "Ayna likes you more"
             $ battleagree = "ayna"
-        "Agree with Bredita{color=#1BBB20} (+1 Bredita's Love)":
+        "Agree with Bredita[ablovecolor] [abreditalove]":
 
             scene v39062a
             with dissolve
@@ -839,7 +839,7 @@ label v39:
             MC "I'm... Sorry... I got carried away"
             ryo "Were you using a spell on me? I felt like..."
             ryo "I need to go..."
-        "Let the stone take control":
+        "[abgreen]Let the stone take control":
             scene v39112
             with dissolve
             MC "Do you feel my power? Do you want to be a mage?"
@@ -873,7 +873,7 @@ label v39:
     MC "What the..."
     yotul "Yotul came see you"
     menu:
-        "Don't orcs know the meaning of doors?":
+        "[abgreen]Don't orcs know the meaning of doors?":
             yotul "Orcs don't have doors"
             MC "I figured..."
         "Sure... Come on in":
@@ -896,7 +896,7 @@ label v39:
     yotul "Yotul body is yours now"
 
     menu:
-        "{color=#1BBB20}Interesting... Go on...":
+        "Interesting... Go on...":
             yotul "Yotul body is yours"
             MC "So you'll do whatever I tell you to?"
             yotul "Yes"
@@ -906,7 +906,7 @@ label v39:
             yotul "Yotul body is yours, Yotul is pleased"
             MC "So you'll do whatever I tell you to?"
             yotul "Yes"
-        "I'm not interested in your body":
+        "[abgreen]I'm not interested in your body":
 
             yotul "Yotul is sad..."
             scene v39121
@@ -924,7 +924,7 @@ label v39:
                     with dissolve
                     "She left the room"
                     jump afterorcv39
-                "{color=#1BBB20}Wait a moment":
+                "[abgreen]Wait a moment":
 
                     MC "Wait.. Hold on a second"
                     scene v39120
@@ -942,7 +942,7 @@ label v39:
                             scene v015001
                             with dissolve
                             jump afterorcv39
-                        "{color=#1BBB20}You can stay":
+                        "[abgreen]You can stay":
 
                             scene v39120
                             with dissolve
@@ -972,7 +972,7 @@ label v39:
             scene v015001
             with dissolve
             jump afterorcv39
-        "{color=#1BBB20}See were this is going":
+        "[abgreen]See were this is going":
 
             MC "I see... And what are you willing to do?"
             yotul "What you want"
@@ -996,7 +996,7 @@ label orckissv39:
     with dissolve
     yotul "Yotul is ready for more"
     menu:
-        "{color=#1BBB20}Lie naked on the bed":
+        "[abgreen]Lie naked on the bed":
             jump orcbedv39
         "Politely tell her to leave":
             $ sexyotul = 3
@@ -1241,7 +1241,7 @@ label trainroomv39:
                         $ enemy = "gokdummy"
                         scene v39167folk
                         jump combat
-                    "{color=#1BBB20}Gokthian Elite {color=#f00}Very Hard{/color}":
+                    "Gokthian Elite {color=#f00}Very Hard{/color}":
                         prof "Very well"
                         scene v39168
                         with dissolve
@@ -1320,7 +1320,7 @@ label trainroomv39:
                         $ enemy = "gokdummy"
                         scene v39167folk
                         jump combat
-                    "{color=#1BBB20}Gokthian Elite {color=#f00}Very Hard{/color}":
+                    "Gokthian Elite {color=#f00}Very Hard{/color}":
                         prof "Very well"
                         scene v39168
                         with dissolve
@@ -1349,60 +1349,60 @@ label v39trainingwin:
     else:
         if enemy == "gokelitedummy":
             menu:
-                "Raise Battlemagic{color=#1BBB20} (+2 Destpoints)":
+                "Raise Battlemagic":
                     $ Destpoints += 2
                     "Your Battlemagic skill improved"
-                "Raise Summoning{color=#1BBB20} (+2 Summpoints)":
+                "Raise Summoning":
 
                     $ Summpoints += 2
                     "Your Summoning skill improved"
-                "Raise Alteration{color=#1BBB20} (+2 Altepoints)":
+                "Raise Alteration":
 
                     $ Altepoints += 2
                     "Your Alteration skill improved"
-                "Raise Ilusion{color=#1BBB20} (+2 Iluspoints)":
+                "Raise Illusion":
 
                     $ Iluspoints += 2
-                    "Your Ilusion skill improved"
-                "Raise Mysticism{color=#1BBB20} (+2 Mystpoints)":
+                    "Your Illusion skill improved"
+                "Raise Mysticism":
 
                     $ Mystpoints += 2
                     "Your Mysticism skill improved"
-                "Raise Healing{color=#1BBB20} (+2 Healpoints)":
+                "Raise Healing":
 
                     $ Healpoints += 2
                     "Your Healing skill improved"
-                "Raise Necromancy{color=#1BBB20} (+2 Necropoints)":
+                "Raise Necromancy":
 
                     $ Necropoints += 2
                     "Your Necromancy skill improved"
 
         elif enemy == "gokdummy":
             menu:
-                "Raise Battlemagic{color=#1BBB20} (+1 Destpoint)":
+                "Raise Battlemagic":
                     $ Destpoints += 1
                     "Your Battlemagic skill improved"
-                "Raise Summoning{color=#1BBB20} (+1 Summpoint)":
+                "Raise Summoning":
 
                     $ Summpoints += 1
                     "Your Summoning skill improved"
-                "Raise Alteration{color=#1BBB20} (+1 Altepoint)":
+                "Raise Alteration":
 
                     $ Altepoints += 1
                     "Your Alteration skill improved"
-                "Raise Ilusion{color=#1BBB20} (+1 Iluspoint)":
+                "Raise Illusion":
 
                     $ Iluspoints += 1
-                    "Your Ilusion skill improved"
-                "Raise Mysticism{color=#1BBB20} (+1 Mystpoint)":
+                    "Your Illusion skill improved"
+                "Raise Mysticism":
 
                     $ Mystpoints += 1
                     "Your Mysticism skill improved"
-                "Raise Healing{color=#1BBB20} (+1 Healpoint)":
+                "Raise Healing":
 
                     $ Healpoints += 1
                     "Your Healing skill improved"
-                "Raise Necromancy{color=#1BBB20} (+1 Necropoint)":
+                "Raise Necromancy":
 
                     $ Necropoints += 1
                     "Your Necromancy skill improved"
@@ -1426,30 +1426,30 @@ label v39trainingwin:
     if v39skillfarm >= 4:
         $ v39skillfarm = 0
         menu:
-            "Raise Battlemagic{color=#1BBB20} (+1 Destpoint)":
+            "Raise Battlemagic":
                 $ Destpoints += 1
                 "Your Battlemagic skill improved"
-            "Raise Summoning{color=#1BBB20} (+1 Summpoint)":
+            "Raise Summoning":
 
                 $ Summpoints += 1
                 "Your Summoning skill improved"
-            "Raise Alteration{color=#1BBB20} (+1 Altepoint)":
+            "Raise Alteration":
 
                 $ Altepoints += 1
                 "Your Alteration skill improved"
-            "Raise Ilusion{color=#1BBB20} (+1 Iluspoint)":
+            "Raise Illusion":
 
                 $ Iluspoints += 1
-                "Your Ilusion skill improved"
-            "Raise Mysticism{color=#1BBB20} (+1 Mystpoint)":
+                "Your Illusion skill improved"
+            "Raise Mysticism":
 
                 $ Mystpoints += 1
                 "Your Mysticism skill improved"
-            "Raise Healing{color=#1BBB20} (+1 Healpoint)":
+            "Raise Healing":
 
                 $ Healpoints += 1
                 "Your Healing skill improved"
-            "Raise Necromancy{color=#1BBB20} (+1 Necropoint)":
+            "Raise Necromancy":
 
                 $ Necropoints += 1
                 "Your Necromancy skill improved"
@@ -1473,6 +1473,12 @@ label v39training:
 
 
 label bathroomcollegev39:
+    if v44check == 1 or v45check >= 1:
+        scene bathhousemiss
+        with dissolve
+        MC "There is no one here right now... unfortunately..."
+        jump afterorcv39
+
     if v43bathfannay == 1:
         jump v43bathfannay
 
@@ -1536,6 +1542,12 @@ label collegelibraryv39:
         MC "I should come back later and read something..."
         jump afterorcv39
     else:
+        if v45check == 1:
+            jump v45library
+        if v45check >= 2:
+            "You should go talk with Ayna first"
+            jump afterorcv39
+
         $ visitcountv39 += 1
         scene v38199
         with dissolve
@@ -1572,11 +1584,25 @@ label v39libraryknow:
 
         "Demon Spells" if v42spellbookcount >= 1:
             jump v43demonspells
+
+        "Didn't find any special books" if v43check == 1 and v42spellbookcount == 0:
+            $ v43nobooks = 1
+            yisnna "That's too bad..."
+            ysnna "Remebember, I'll reward you if you do."
+            jump afterorcv39
         "Nothing I'm leaving":
 
             jump afterorcv39
 
 label courtyardv39:
+    if v44citytravel == 1:
+        scene courtyard
+        with dissolve
+        "You look around the courtyard but don't find anyone"
+        jump afterorcv39
+
+    if v44katlab >= 1:
+        jump v44katcourt
     if v43check >= 1:
         jump v43courtryo
 
@@ -1759,6 +1785,16 @@ label courtyardv39:
 
 
 label throneroomcollegev39:
+    if v45check == 1:
+        "She's not here"
+        jump afterorcv39
+
+    if v45check == 2:
+        jump v45aynatalk
+
+    if v44citytravel == 1:
+        jump v44citytravel1
+
     if v43check >= 1:
         scene throne
         with dissolve
@@ -1910,6 +1946,12 @@ label midaroomv39:
         jump afterorcv39
 
 label labv39:
+    if v44citytravel == 1:
+        MC "Wait... Kat is making potions right now, I'm safer not going in there..."
+        jump afterorcv39
+
+    if v44check >= 1:
+        jump v44labkat
     if v43check >= 1:
         jump v43labkat
     if v4midajoined == 1:

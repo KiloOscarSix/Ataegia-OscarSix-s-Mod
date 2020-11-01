@@ -52,7 +52,7 @@ label lessons:
     katarro "The Archmage believes that you have great magic in you"
     katarro "So you will be attending classes here"
     menu:
-        "{color=#1BBB20}Ok.. if you think so..":
+        "[abgreen]Ok.. if you think so..":
             katarro "Good"
             jump lessons01
         "What if I don't want to?":
@@ -200,7 +200,7 @@ label sleeping:
         fvoice "To see your mother suffer"
         fvoice "Why would you do that?"
         menu:
-            "I do what I want!!{color=#FF0000} (-1 Alignment/+1 Necropoint)":
+            "I do what I want!![abred] [abnoalignment] [abnecropoint]":
                 $ Points -= 1
                 "You received -1 Alignment"
                 fvoice "I'm sad to hear that..."
@@ -234,7 +234,7 @@ label sleeping:
                 n "The figure disappeared"
                 MC "Wow, that was strange..."
                 jump schoolday01
-            "I'm sorry... forgive me I didn't mean to...{color=#1BBB20} (+1 Alignment/Healpoint)":
+            "I'm sorry... forgive me I didn't mean to... [abgreen] [abalignment] [abhealpoint]":
 
                 $ Points = 0
                 "You received +1 Alignment"
@@ -277,7 +277,7 @@ label schoolday01:
             katriona "Let me take you to class then"
             hide katriona001
             jump schoolday02
-        "{color=#1BBB20}Leave the room":
+        "[abgreen]Leave the room":
 
             scene hall
             with dissolve
@@ -365,7 +365,7 @@ label schoolday02:
             "You decided to skip history and geography"
             "Some of the game's plot maybe be harder to understand now"
             jump magiclesson001
-        "{color=#1BBB20}Listen to the whole lesson":
+        "[abgreen]Listen to the whole lesson":
             scene classroom006
             with dissolve
             fprof "So let's start"
@@ -901,7 +901,7 @@ label Goodguys:
             kitargo "Kitargo is good"
             mida "We should go to class now guys"
             jump summonclass
-        "{color=#1BBB20}Nah... you suck, keep trying though":
+        "[abgreen]Nah... you suck, keep trying though":
 
             kitargo "You is mean person"
             mida "Aahhahaah"
@@ -921,7 +921,7 @@ label summonclass:
             "You decided to skip the history part"
             "Some of the game plot may be harder to understand"
             jump class2summon
-        "{color=#1BBB20}Listen to the whole lesson":
+        "[abgreen]Listen to the whole lesson":
             prof "So, do any of you have a clue where Magic came from?"
             scene summonclass002
             with dissolve
@@ -1063,7 +1063,7 @@ label class2summon:
     prof "And that was a turning point in the battle"
     prof "We lost many people, but we won that day"
     menu:
-        "{color=#1BBB20}Ask who Bredita is":
+        "[abgreen]Ask who Bredita is":
             scene summonclass005
             with dissolve
             show hand002
@@ -1242,7 +1242,7 @@ label praticesummon001:
         "It's not my fault! Hatoshi started it":
             ayna "You know it's not nice to tell on other students"
             jump Archsermon
-        "{color=#1BBB20}I'm very sorry Archmage...":
+        "[abgreen]I'm very sorry Archmage...":
             ayna "No harm done..."
             jump Archsermon
 
@@ -1318,7 +1318,7 @@ label Archsermon:
     "You see them leaving"
     MC "Should I follow them?"
     menu:
-        "Follow them{color=#1BBB20} (Some scenes)":
+        "Follow them":
             MC "I'll see what they're up to"
             jump sunbanglili001
         "Go to your room":
@@ -1980,7 +1980,7 @@ label roomdps:
     n "You learn magic to:"
     nvl clear
     menu:
-        "Be strong enough to help people{color=#1BBB20} (+1 Alignment)":
+        "Be strong enough to help people[abgreen] [abalignment]":
             "You are always ready to help others with your skills"
             "+1 alignment point"
             $ Points += 1
@@ -1989,7 +1989,7 @@ label roomdps:
             "You follow your own path, you help and or kill who you want"
             "No alignment change"
             jump question02
-        "So that nobody can stop me from ruling the world{color=#FF0000} (-1 Alignment)":
+        "So that nobody can stop me from ruling the world[abred] [abnoalignment]":
             "You have the ambition to rule over everyone, like you deserve"
             "-1 alignment point"
             $ Points -= 1
@@ -2001,21 +2001,21 @@ label question02:
     n "By a bear, so you.."
     nvl clear
     menu:
-        "Used fear on the bear and healed my colleague{color=#1BBB20} (+1 Alignment/Heal/Iluspoints)":
+        "Used fear on the bear and healed my colleague[abgreen] [abalignmenthealiluspoints]":
             "You didn't want to kill the animal and saved your colleague"
-            "+1 alignment point, +1 Healing point, +1 Ilusion point"
+            "+1 alignment point, +1 Healing point, +1 Illusion point"
             $ Points += 1
             $ Iluspoints += 1
             $ Healpoints += 1
             jump question03
-        "Used ironskin on myself and flames to scare the bear":
+        "Used ironskin on myself and flames to scare the bear[abgreen] [abaltedestpoints]":
             "As long as you don't get hurt..."
             "Everybody should be able to defend themselves.."
             "+ 1 Battlemagic point, +1 Alteration point"
             $ Altepoints += 1
             $ Destpoints += 1
             jump question03
-        "I summoned a creature to fight the bear and experimented on my dead colleague’s body{color=#FF0000} (-1 Alignment/+1 Necro/Summpoints)":
+        "I summoned a creature to fight the bear and experimented on my dead colleague’s body[abred] [abnoalignment] [abnecrosummpoints]":
             "The bear is dead, no more problems from it"
             "And since there was a dead body... why not?"
             "-1 alignment point, +1 Summoning point, +1 Necromancy point"
@@ -2027,39 +2027,39 @@ label question02:
 label question03:
     "Your favorite school of magic in college is"
     menu:
-        "Battlemagic{color=#1BBB20} (+3 Destpoints) {image=001battle}":
+        "Battlemagic[abgreen] [abdestpoints3] {image=001battle}":
 
             "You love Battlemagic, and you practice it a lot"
             "+3 Battlemagic points"
             $ Destpoints += 3
             $ favmagic = "destruction"
             jump question04
-        "Illusion{color=#1BBB20} (+3 Iluspoints) {image=001illusion}":
+        "Illusion[abgreen] [abiluspoints3] {image=001illusion}":
             "You love Illusion, and you practice it a lot"
             "+3 Illusion points"
             $ Iluspoints += 3
             $ favmagic = "illusion"
             jump question04
-        "Healing{color=#1BBB20} (+3 Healpoints) {image=001heal}":
+        "Healing[abgreen] [abhealpoints3] {image=001heal}":
 
             "You love Healing, and you practice it a lot"
             "+3 Healing points"
             $ Healpoints += 3
             $ favmagic = "heal"
             jump question04
-        "Mysticism{color=#1BBB20} (+3 Mystpoints) {image=001myst}":
+        "Mysticism[abgreen] [abmystpoints3] {image=001myst}":
             "You love Mysticism, and you practice it a lot"
             "+3 Mysticism points"
             $ Mystpoints += 3
             $ favmagic = "myst"
             jump question04
-        "Summoning{color=#1BBB20} (+3 Summpoints) {image=001summon}":
+        "Summoning[abgreen] [absummpoints3] {image=001summon}":
             "You love Summoning, and you practice it a lot"
             "+3 Summoning points"
             $ Summpoints += 3
             $ favmagic = "summ"
             jump question04
-        "Alteration{color=#1BBB20} (+3 Altepoints) {image=001alteration}":
+        "Alteration[abgreen] [abaltepoints3] {image=001alteration}":
             "You love Alteration, and you practice it a lot"
             "+3 Alteration points"
             $ Altepoints += 3
@@ -2070,27 +2070,27 @@ label question04:
     "Your second favorite school of magic in college is"
     menu:
 
-        "Battlemagic{color=#1BBB20} (+2 Destpoints) {image=001battle}" if favmagic != "destruction":
+        "Battlemagic[abgreen] [abdestpoints2] {image=001battle}" if favmagic != "destruction":
             "+2 Battlemagic points"
             $ Destpoints += 2
             jump question05
-        "Illusion{color=#1BBB20} (+2 Iluspoints) {image=001illusion}" if favmagic != "illusion":
+        "Illusion[abgreen] [abiluspoints2] {image=001illusion}" if favmagic != "illusion":
             "+2 Illusion points"
             $ Iluspoints += 2
             jump question05
-        "Healing{color=#1BBB20} (+2 Healpoints) {image=001heal}" if favmagic != "heal":
+        "Healing[abgreen] [abhealpoints2] {image=001heal}" if favmagic != "heal":
             "+2 Healing points"
             $ Healpoints += 2
             jump question05
-        "Mysticism{color=#1BBB20} (+2 Mystpoints) {image=001myst}" if favmagic != "myst":
+        "Mysticism[abgreen] [abmystpoints2] {image=001myst}" if favmagic != "myst":
             "+2 Mysticism points"
             $ Mystpoints += 2
             jump question05
-        "Summoning{color=#1BBB20} (+2 Summpoints) {image=001summon}" if favmagic != "summ":
+        "Summoning[abgreen] [absummpoints2] {image=001summon}" if favmagic != "summ":
             "+2 Summoning points"
             $ Summpoints += 2
             jump question05
-        "Alteration{color=#1BBB20} (+2 Altepoints) {image=001alteration}" if favmagic != "alt":
+        "Alteration[abgreen] [abaltepoints2] {image=001alteration}" if favmagic != "alt":
             "+2 Alteration points"
             $ Altepoints += 2
             jump question05
@@ -2101,7 +2101,7 @@ label question05:
     $ midalove = 0
     "Why?"
     menu:
-        "Because I like her{color=#1BBB20} (+1 Alignment/Mida's Love)":
+        "Because I like her[abgreen] [abalignmentlove]":
             "Mida's love increased"
             "+1 alignment point"
             $ Points +=1
@@ -2110,7 +2110,7 @@ label question05:
         "Because I'm a guy and I like to bang girls":
             "Those who tell the truth..."
             jump question06
-        "Because I can use her for my plans{color=#FF0000} (-1 Alignment/+1 Mida's Corruption)":
+        "Because I can use her for my plans[abred] [abnoalignmentcorruption]":
             "Mida's corruption increased"
             "-1 alignment point"
             $ Points -=1
@@ -2122,7 +2122,7 @@ label question06:
     "Last question I promise :P"
     "What do you think about the other races (Orcs, Elves, Jithaks etc..)?"
     menu:
-        "All races deserve the same respect and I will defend it{color=#1BBB20} (+1 Alignment)":
+        "All races deserve the same respect and I will defend it[abgreen] [abalignment]":
             "+1 alignment point"
             "Some game choices may be different because of your racial preferences"
             $ Points +=1
@@ -2130,7 +2130,7 @@ label question06:
         "I don't really care about that, I let them do what they want..":
             "As long as nobody bothers you, right?"
             jump adulthood
-        "There is only one real race!! Orcs, Jithaks, Elves... They are all shit{color=#FF0000} (-1 Alignment/Racist= True)":
+        "There is only one real race!! Orcs, Jithaks, Elves... They are all shit[abred] [abnoalignment]":
             "-1 alignment point"
             "Some game choices may be different because of your racial preferences"
             $ Points -=1

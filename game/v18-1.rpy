@@ -14,7 +14,7 @@ label v018:
     with dissolve
     "What should you do?"
     menu:
-        "Cast Fear{color=#1BBB20} (+1 Iluspoint) {image=001illusion}" if Iluspoints >= 4:
+        "Cast Fear[abgreen] [abiluspoint] {image=001illusion}" if Iluspoints >= 4:
             "You decide to cast fear"
             play sound "sounds/fear.ogg"
             scene v18006ilu
@@ -24,7 +24,7 @@ label v018:
             oldman "Ahhh!"
 
             jump impfight
-        "Cast Flames{color=#1BBB20} (+1 Destpoint) {image=001battle}" if Destpoints >= 4:
+        "Cast Flames[abgreen] [abdestpoint] {image=001battle}" if Destpoints >= 4:
             "You decide to cast Flames"
             play sound "sounds/flames.wav"
             scene v18006des
@@ -34,7 +34,7 @@ label v018:
             oldman "Ahhh!"
 
             jump impfight
-        "Summon Something{color=#1BBB20} (+1 Summpoint) {image=001summon}" if Summpoints >= 4:
+        "Summon Something[abgreen] [absummpoint] {image=001summon}" if Summpoints >= 4:
             "You decide to summon a Reptilian"
             play sound "sounds/summon.ogg"
             scene v18006sum
@@ -44,7 +44,7 @@ label v018:
             oldman "Ahhh!"
 
             jump impfight
-        "Use Telekinesis{color=#1BBB20} (+1 Mystpoint) {image=001myst}" if Mystpoints >= 4:
+        "Use Telekinesis[abgreen] [abmystpoint] {image=001myst}" if Mystpoints >= 4:
             "You used telekinesis"
             play sound "sounds/force.ogg"
             scene v18006mys
@@ -54,7 +54,7 @@ label v018:
             oldman "Ahhh!"
 
             jump impfight
-        "Use a ward{color=#1BBB20} (+1 Altepoint) {image=001alteration}" if Altepoints >= 4:
+        "Use a ward[abgreen] [abaltepoint] {image=001alteration}" if Altepoints >= 4:
             "You decide to cast a ward"
             play sound "sounds/ward.ogg"
             scene v18006alt
@@ -98,7 +98,7 @@ label impfight:
     imp "What do you say?"
     $ dealimp = False
     menu:
-        "Seems good to me{color=#1BBB20} (Deal= True)":
+        "[abgreen]Seems good to me":
             scene v18011
             with dissolve
             imp "I knew you were a smart one"
@@ -634,7 +634,6 @@ label libraryknows:
 label librarychoices:
     MC "I want to learn about"
     menu:
-        AB "Choose all."
         "Myself" if talkmyself == False:
             jump storymyself
         "You" if talklibraryyou == False:
@@ -1057,7 +1056,7 @@ label postlibrarystory:
     amida "[MC] are you awake?"
 
     menu:
-        "{color=#1BBB20}Answer her":
+        "[abgreen]Answer her":
             scene v015001
             with dissolve
             MC "Yes I am"
@@ -1066,7 +1065,7 @@ label postlibrarystory:
             with dissolve
             amida "I was thinking we could have some fun"
             menu:
-                "{color=#1BBB20}I'm always ready for fun!":
+                "[abgreen]I'm always ready for fun!":
                     amida "Great!"
                     amida "Let me show you what I have under this dress"
                     scene v18124
@@ -1086,17 +1085,17 @@ label postlibrarystory:
                     "Showing her ass even more"
                     amida "Do you like it?"
                     menu:
-                        "I love it{color=#1BBB20} (+1 Mida's Love)":
+                        "I love it[ablovecolor] [ablove]":
                             $ midalove += 1
                             "Mida's love increased"
                             amida "Let me show you more"
                             jump v18midasex
-                        "Bring that ass here!{color=#FF0000} (+1 Mida's Corruption)":
+                        "Bring that ass here![abcorruptioncolor] [abcorruption]":
                             $ midacorr += 1
                             "Mida's corruption increased"
                             amida "Giggle"
                             jump v18midasex
-                "I'm too tired, maybe tomorrow{color=#FF0000} (-1 Mida's Corruption/Love)":
+                "I'm too tired, maybe tomorrow[abred] [abnocorruptionlove]":
 
 
 
@@ -1128,7 +1127,7 @@ label v18midasex:
     with dissolve
     amida "Lie on the bed please"
     menu:
-        "Ignore her and put a finger in her pussy{color=#FF0000} (+1 Mida's Corruption)":
+        "Ignore her and put a finger in her pussy[abcorruptioncolor] [abcorruption]":
             scene v18130
             with dissolve
             amida "Oh! I wasn't expecting that"
@@ -1175,7 +1174,7 @@ label v18midasex:
             with dissolve
             "She turns around to face you"
             jump v18midasex2
-        "Lie on the bed{color=#FF0000} (More points in the next choice)":
+        "Lie on the bed[abgreen] [abcorrulove]":
 
 
             "You lied on the bed"
@@ -1183,12 +1182,12 @@ label v18midasex:
             with dissolve
             amida "You are so hard already!"
             menu:
-                "That's because I love you{color=#1BBB20} (+1 Mida's Love)":
+                "That's because I love you[ablovecolor] [ablove]":
                     $ midalove += 1
                     "Mida's love increased"
                     amida "Oh... I love you too"
                     jump v18midasex2
-                "That's because you're so hot{color=#FF0000} (+1 Mida's Corruption)":
+                "That's because you're so hot[abcorruptioncolor] [abcorruption]":
                     $ midacorr += 1
                     "Mida's corruption increased"
                     amida "You naughty boy..."
@@ -1202,7 +1201,7 @@ label v18midasex2:
     $ midaorder = 0
     amida "So now I'm going to..."
     menu:
-        "I give the orders here{color=#FF0000} (+1 Mida's Corruption/Order)" if midacorr >= 2:
+        "I give the orders here[abcorruptioncolor] [abcorruption]" if midacorr >= 2:
             amida "Uhmm ok..."
             amida "I... Like this..."
             $ midaorder = 1
@@ -1212,7 +1211,7 @@ label v18midasex2:
 
 
 
-        "Smile and let her finish{color=#1BBB20} (+1 Mida's Love)" if midalove >= 2:
+        "Smile and let her finish[ablovecolor] [ablove]" if midalove >= 2:
             amida "Let you choose what you want"
             amida "Since you are so lovely"
             $ midalove += 1

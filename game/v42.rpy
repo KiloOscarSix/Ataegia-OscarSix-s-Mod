@@ -237,7 +237,7 @@ label v42slayerdocks:
                 thug2 "Ahahah"
                 jump v4slayercitymap
 
-            "Use illusion to mind trick them{color=#1BBB20} (+50 Gold)" if Iluspoints >= 0:
+            "Use illusion to mind trick them[abgreen] [abgold50]" if Iluspoints >= 0:
                 MC "I think you should give me 50 gold"
                 thug "We should... Give... You"
                 scene v42137
@@ -500,7 +500,7 @@ label endspellchoice_shopv42:
     with dissolve
 
     menu:
-        "Use the stone's power":
+        "[abgreen]Use the stone's power":
             $ bairnform = 2
             "Suddenly the image of the old man begins to waver then crack entirely"
             scene v42027a
@@ -662,7 +662,7 @@ label questionsmenuv42:
 label questionsmenuv42_2:
 
     menu:
-        "You have nothing to fear from me{color=#1BBB20} (+1 Alignment/Cereal Love)":
+        "You have nothing to fear from me[abgreen] [abalignmentlove]":
 
             stop music
             play music "<loop 0.0>ingame.mp3"
@@ -705,7 +705,7 @@ label questionsmenuv42_2:
             MC "Farewell Cerea"
             MC "I am sorry you were exiled from your library, but I am glad to have met you"
             jump v4slayercitymap
-        "Blackmail her{color=#FF0000} (-1 Alignment)":
+        "Blackmail her[abred] [abnoalignment]":
 
             stop music
             play music "<loop 0.0>ingame.mp3"
@@ -733,7 +733,7 @@ label questionsmenuv42_2:
             "Cerea hates you"
             "You leave the shop"
             jump v4slayercitymap
-        "Use the stone to corrupt her{color=#FF0000} (-2 Alignment)":
+        "Use the stone to corrupt her[abred] [abnoalignment2]":
 
             $ bairnform = 4
             $ Points -= 2
@@ -1065,14 +1065,14 @@ label v42church:
                     "You try your best to break that spell"
                     cari "I..."
                     jump v42fightback
-                "Try to cast a mind spell on the girls":
+                "Try to cast a mind spell on the girls[abgreen] [abendings]":
 
                     "You are not powerful enough to mess with their minds"
                     jump thethingthatshouldnotbe
-                "Give up to the temptation and power":
+                "Give up to the temptation and power[abgreen] [abendings]":
 
                     jump thethingthatshouldnotbe
-        "Give up to the temptation and power":
+        "Give up to the temptation and power[abgreen] [abendings]":
 
             jump thethingthatshouldnotbe
 
@@ -1263,7 +1263,7 @@ label v42fightback:
         "Get the hell out of here":
             MC "I'm out of here"
             jump v42afterescape
-        "Grab the stone and leave{color=#FF0000} (-1 Alignment)":
+        "Grab the stone and leave[abred] [abnoalignment]":
 
             scene v42081
             with dissolve
@@ -1273,7 +1273,7 @@ label v42fightback:
             MC "I'm out of here"
             $ v42grabstone = 1
             jump v42afterescape
-        "Try to help Carilielle{color=#1BBB20} (+1 Alignment)":
+        "Try to help Carilielle[abgreen] [abalignment]":
 
             scene v42082
             with dissolve
@@ -1312,7 +1312,7 @@ label v42fightback:
             with vpunch
             "Maybe Ayna or Bredita can help you with it?"
             menu:
-                "Grab the stone and go":
+                "[abgreen]Grab the stone and go":
                     $ v42grabstone = 2
                     scene v42081
                     with dissolve
@@ -1581,4 +1581,3 @@ label v42talkportal:
     "You can't believe that you are back in the College safe and sound"
     "Especially after what almost happened..."
     jump v43version
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

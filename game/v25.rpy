@@ -1,4 +1,4 @@
-
+﻿
 init:
     $ lili_affection = 0
 
@@ -115,15 +115,15 @@ label v25:
     if yisnnaafect >= 1:
         $ yisnalove += 1
 
-
+######### bat
     $ companion = 0
-
+######### bat
 
 
     if Points >=2:
         $ aynalove = 1
     else:
-        $ aynalove = 0
+       $ aynalove = 0
 
     $ aynacorr = 0
 
@@ -220,4 +220,3 @@ label v2exitroom001:
 label courtyardv001:
     MC "I have nothing to do there"
     call screen collegeblue
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -334,9 +334,8 @@ label katroomdream:
 label bookchoice01:
     MC "It's a book about the schools of magic..."
     MC "Should I read it?"
-    AB "Come back and choose all."
     menu:
-        "{color=#1BBB20}Yes":
+        "[abgreen]Yes":
             MC "Let's read a bit about that"
             MC "I want to check..."
             menu:
@@ -443,7 +442,7 @@ label leftkatroom:
     MC "There's the other one too, she looks amazing..."
     MC "Should I stay? What if someone see me?"
     menu:
-        "{color=#1BBB20}Leave":
+        "[abgreen]Leave":
             MC "Let's get out of here"
             jump endbath
         "Stay":
@@ -536,10 +535,9 @@ label endbath:
     katarro "Sorry"
     katarro "I didn't mean to scare you"
     menu:
-        "{color=#1BBB20}You didn't, don't worry":
+        "[abgreen]You didn't, don't worry":
             katarro "A tough one aren't you?"
             jump lessons
         "I... just wasn't expecting that":
-
             katarro "Ahaha, You'll get used to it"
             jump lessons
