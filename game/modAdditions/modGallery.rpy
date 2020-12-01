@@ -26,14 +26,14 @@ init python:
         return rv
 
 define galleryMenu = [
-["Mida", "/images/v0.4.5/v45050.jpg"],
-["Lili", "/images/v0.4.5/v45050.jpg"],
-["Ayna", "/images/v0.4.5/v45050.jpg"],
-["Isabella", "/images/v0.4.5/v45050.jpg"],
-["Katriona", "/images/v0.4.5/v45050.jpg"],
-["Bredita", "/images/v0.4.5/v45050.jpg"],
-["Fannay", "/images/v0.4.5/v45050.jpg"],
-["Other", "/images/v0.4.5/v45050.jpg"],
+["Mida", "/images/v0.15/init/v015011.jpg"],
+["Lili", "/images/v0.15/init/v015096.jpg"],
+["Ayna", "/images/v0.15/init/v015090.jpg"],
+["Isabella", "/images/v0.2.1/v021045.jpg"],
+["Katriona", "/images/v0.15/init/v015094.jpg"],
+["Bredita", "/images/Bredita/bredita003.jpg"],
+["Fannay", "/images/v0.15/init/v015018.jpg"],
+["Other", "/images/v0.4.2/v42112.jpg"],
 ]
 
 define mida = GalleryItem("Mida", 1, "yourroomv3e", "v0.3/evil/v3e095.jpg", {"afteralinepart":1, "midaown":0, "midalove":99}) # Mida
@@ -45,6 +45,7 @@ define mida = GalleryItem("Mida", 1, "soloingisgood2", "v0.3.8/v38081.jpg") # Mi
 define mida = GalleryItem("Mida", 1, "v4runartalk", "v0.4.1/v41114.jpg") # Mida
 define mida = GalleryItem("Mida", 1, "galleryScene7", "v0.15/missions/v15mission073.jpg") # Mida
 define mida = GalleryItem("Mida", 2, "v18midasex2", "v0.18/mcroom/v18137.jpg", {"midacorr":99, "midalove":99, "firstgoingv18":0}) # Mida
+define Mida = GalleryItem("Mida", 2, "galleryScene11", "v0.4.6/v46147.jpg")
 
 define lili = GalleryItem("Lili", 1, "sunbanglili001", "suntakolili/sunlili020.jpg") # Lili
 define lili = GalleryItem("Lili", 1, "v33salazar", "v0.3.3e/v33066.jpg", {"Points":99}) # Lili
@@ -75,6 +76,8 @@ define bredita = GalleryItem("Bredita", 1, "galleryScene8", "v0.18/breditalili/v
 define fannay = GalleryItem("Fannay", 1, "v36fannay", "v0.3.6/v36045.jpg") # Fannay + Mida
 define fannay = GalleryItem("Fannay", 1, "tisbetterthan2", "v0.3.8/v38043.jpg", {"my_path_is":"good", "midacorr":99}) # Mida + Fannay
 define fannay = GalleryItem("Fannay", 1, "evilpartroomv38", "v0.3.8/v38135.jpg") # Fannay
+define fannay = GalleryItem("Fannay", 1, "v46fannayscene", "v0.4.6/v46102.jpg")
+
 
 define Giselle = GalleryItem("Other", 1, "fuckgisellev2", "v0.2/2stage/v2137.jpg", {"helparnoldus":0})
 define Emilia = GalleryItem("Other", 1, "emiliasexpart", "v0.2.1/v021033.jpg")
@@ -95,7 +98,6 @@ define Emilia = GalleryItem("Other", 2, "v44emiliasexpart", "v0.4.4/v44181.jpg")
 define Ataegina = GalleryItem("Other", 3, "v45gooddream", "v0.4.5/v45029.jpg", {"Points":99})
 define Lust = GalleryItem("Other", 3, "v45evildream", "v0.4.5/v45132.jpg", {"Points":-99})
 define Katla = GalleryItem("Other", 3, "v45neutraldream", "v0.4.5/v45147.jpg", {"Points":0})
-
 
 default galleryPageNumber = 1
 default scopeDict = {}

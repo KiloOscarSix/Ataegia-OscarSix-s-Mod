@@ -1,19 +1,7 @@
-# textbutton _("Mod Options") action Show("modOptions")
-# textbutton _("Oscar's Gallery") action [ui.callsinnewcontext("galleryNameChange"), Show("sceneGalleryMenu")]
-
-# if title == "Save":
-#     text "{color=#fff}Save Name:{/color}":
-#         xalign 0
-#         yalign -0.005
-#     input:
-#         xalign 0
-#         yalign 0.05
-#         value VariableInputValue("save_name")
-
 screen navigation():
 
 
-    text "{size=-30}{color=#f00} V0.4.5 {/color} (All paths) {/size}":
+    text "{size=-30}{color=#f00} V0.4.6 {/color} (All paths) {/size}":
         xpos 1900
         ypos 30
     imagebutton auto "gui/kofi_%s.png" xalign 1.00 yalign 1.00 action OpenURL("https://www.buymeacoffee.com/BOTUQjCW2")
@@ -31,7 +19,6 @@ screen navigation():
         spacing gui.navigation_spacing
 
         if main_menu:
-
             textbutton _("Start") action Start()
 
         else:
@@ -46,7 +33,7 @@ screen navigation():
         textbutton _("Options") action ShowMenu("preferences")
 
         if main_menu:
-            textbutton _("Oscar's Gallery") action [Show("sceneGalleryMenu"), ui.callsinnewcontext("galleryNameChange")]
+            textbutton _("Oscar's Gallery") action [ui.callsinnewcontext("galleryNameChange"), Show("sceneGalleryMenu")]
 
         if _in_replay:
 
@@ -55,6 +42,7 @@ screen navigation():
         elif not main_menu:
 
             textbutton _("Main Menu") action MainMenu()
+
 
         textbutton _("Visit Us") action OpenURL("http://www.kthuliangames.rf.gd")
 
@@ -66,93 +54,15 @@ screen navigation():
             ## The quit button is banned on iOS and unnecessary on Android.
             textbutton _("Quit") action Quit(confirm=not main_menu)
 
-screen file_slots(title):
+screen save():
 
-    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
+    tag menu
 
-    use game_menu(title):
+    use file_slots(_("Save"))
 
-        fixed:
-
-            if title == "Save":
-                text "{color=#fff}Save Name:{/color}":
-                    xalign 0
-                    yalign -0.005
-                input:
-                    xalign 0
-                    yalign 0.05
-                    value VariableInputValue("save_name")
-
-
-            ## This ensures the input will get the enter event before any of the
-            ## buttons do.
-            order_reverse True
-
-            ## The page name, which can be edited by clicking on a button.
-            button:
-                style "page_label"
-
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
-
-                input:
-                    style "page_label_text"
-                    value page_name_value
-
-            ## The grid of file slots.
-            grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
-
-                xalign 0.5
-                yalign 0.5
-
-                spacing gui.slot_spacing
-
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
-
-                    $ slot = i + 1
-
-                    button:
-                        if title == "Save":
-                            action [SetVariable("save_name",""), get_save_name(slot)]
-                        else:
-                            action FileAction(slot)
-
-                        add FileScreenshot(slot) xalign 0.5
-
-                        key "save_delete" action FileDelete(slot)
-
-
-
-                        vbox:
-                            xalign 0.5
-                            yalign 1.0
-                            text FileSlotName(slot, gui.file_slot_cols * gui.file_slot_rows) + ") " + FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                                style "slot_time_text"
-
-                            text FileSaveName(slot):
-                                style "slot_name_text"
-
-            ## Buttons to access other pages.
-            hbox:
-                style_prefix "page"
-
-                xalign 0.5
-                yalign 1.0
-
-                spacing gui.page_spacing
-
-                textbutton _("<") action FilePagePrevious()
-
-                if config.has_autosave:
-                    textbutton _("{#auto_page}A") action FilePage("auto")
-
-                if config.has_quicksave:
-                    textbutton _("{#quick_page}Q") action FilePage("quick")
-
-                ## range(1, 10) gives the numbers from 1 to 9.
-                for page in range(1, 10):
-                    textbutton "[page]" action FilePage(page)
-
-                textbutton _(">") action FilePageNext()
+    vbox:
+        align(0.28, 0.185)
+        text "{color=#fff}Save Name:{/color}"
+        input:
+            yalign 0.05
+            value VariableInputValue("save_name")

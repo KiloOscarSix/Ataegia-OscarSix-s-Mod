@@ -343,7 +343,7 @@ label v2window01:
                 with dissolve
 
                 jump v2roomselect01
-            "[abgreen]No, it's to risky":
+            "[abgreen]No, it's too risky":
                 scene mcroombg01
                 with dissolve
                 "You leave the window"
@@ -837,7 +837,7 @@ label katrionav2:
                 $ talkwithkat = 2
                 jump courtyardv2
 
-            "[abgreen]I heard that she left the college early this morning" if darkelftalk == 2:
+            "I heard that she left the college early this morning" if darkelftalk == 2:
                 MC "I heard that she left the college early this morning"
                 katriona "Really? Maybe she went to meditate somewhere"
                 katriona "Strange..."
@@ -1318,7 +1318,7 @@ label villagethugv2:
                             jack "But some thieves stole my equipment"
                             jack "Now I can't work to pay him back..."
                             menu:
-                                "[abgreen]I will help you":
+                                "I will help you":
                                     MC "I will help you get your equipment back"
                                     $ helpjackv2 = 1
                                     scene v2042

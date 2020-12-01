@@ -557,7 +557,7 @@ label endspellchoice_shopv42:
             cerea "Because of Knowledge..."
             cerea "I was the keeper of the Grand Library of the Nine Hells"
             cerea "Knowledge is what I take pride in most of all"
-            cerea "If had helped... if I had given him what he wanted..."
+            cerea "If I had helped... if I had given him what he wanted..."
             cerea "Do you know what happens when one race rules over every other?"
             cerea "Dogma.... Stagnation..."
             scene v42018
@@ -648,7 +648,7 @@ label questionsmenuv42:
             scene v42017
             with dissolve
             cerea "So... what now? Going to fight me? Kill me?"
-            cerea "Turn me into the Slayer Guards? Blackmail me into lowering my prices?"
+            cerea "Turn me in to the Slayer Guards? Blackmail me into lowering my prices?"
             stop music
             play music "<loop 0.0>sounds/beat.mp3"
             show shotr
@@ -966,7 +966,6 @@ label v42church:
     scene v42044
     with dissolve
     stop music
-    label galleryScene6:
     play music "<loop 0.0>huntercamp.mp3"
     "You open your eyes and see Lust and Carilielle in front of you"
     "You can feel your body moving by itself"
@@ -1052,7 +1051,7 @@ label v42church:
     cari "Yes!! I'm cumming!!"
     MC "I..."
     menu:
-        "Resist, give your best to fight back":
+        "Resist, give your best to fight back[abgreen] [abendings]":
             MC "I will not allow this.... I can't..."
             scene v42059
             with dissolve
@@ -1072,7 +1071,7 @@ label v42church:
                 "Give up to the temptation and power[abgreen] [abendings]":
 
                     jump thethingthatshouldnotbe
-        "Give up to the temptation and power[abgreen] [abendings]":
+        "Give up to the temptation and power":
 
             jump thethingthatshouldnotbe
 
@@ -1125,7 +1124,6 @@ label thethingthatshouldnotbe:
     "It had all the girls, power, and land he wanted"
     "But in the end... Was it really you in command?"
     "Thank you for playing, try different choices to find different endings"
-    $ renpy.end_replay()
     jump endversion
 
 
@@ -1150,7 +1148,7 @@ label v42fightback:
     lust "You really think you can face me?"
     scene v42063
     with dissolve
-    "It doesn't take long before Lust power overcomes Carilielle"
+    "It doesn't take long before Lust's power overcomes Carilielle"
     lust "How dare you attack me? Me? Your queen!"
     scene v42064
     with dissolve
@@ -1325,7 +1323,6 @@ label v42fightback:
                     jump v42afterescape
 
 label v42afterescape:
-    $ renpy.end_replay()
     stop music
     play music "<loop 0.0>ingame.mp3"
     scene v42098
@@ -1581,3 +1578,4 @@ label v42talkportal:
     "You can't believe that you are back in the College safe and sound"
     "Especially after what almost happened..."
     jump v43version
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

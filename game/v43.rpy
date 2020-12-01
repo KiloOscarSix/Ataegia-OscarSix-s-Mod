@@ -369,8 +369,8 @@ label v43courtryo:
             "[abgreen]Talk with her about what happened before":
                 scene v38167
                 with dissolve
-                ryo "Look I... wanted to apologize my behavior from before..."
-                ryo "I felt this sudden, overwhelming attaction to you but I had to stop..."
+                ryo "Look I... wanted to apologize for my behavior from before..."
+                ryo "I felt this sudden, overwhelming attraction to you but I had to stop..."
                 ryo "Because I felt like I would dishonor myself..."
                 scene v38164
                 with dissolve
@@ -652,7 +652,7 @@ label v43postdream:
     isabella "Hi..."
     scene v43052
     with dissolve
-    lili "So... I heard this screaming and come here running..."
+    lili "So... I heard this screaming and came here running..."
     lili "This is not what I expected to find... "
     isabella "Well this is..."
     menu:
@@ -1005,9 +1005,8 @@ label v43isasex:
             with dissolve
             "She left the room and you are alone again"
             play sound "sounds/door.mp3"
-            $ renpy.end_replay()
             jump v43breditanecro
-        "Tell her you're there for her{color=#1BBB20} (+1 Isabella's Love)":
+        "Tell her you're there for her[ablovecolor] [ablove]":
             scene v43095
             with dissolve
             MC "I would do everything to keep a smile on you face"
@@ -1227,7 +1226,6 @@ label v43isasex:
                 with dissolve
                 "She left the room and you are alone again"
                 MC "...."
-                $ renpy.end_replay()
                 jump v43breditanecro
 
 
@@ -1251,9 +1249,8 @@ label v43lilisex:
             scene v43043
             with dissolve
             "She left the room and you are alone again"
-            $ renpy.end_replay()
             jump v43breditanecro
-        "{color=#1BBB20}Really?":
+        "[abgreen]Really?":
 
             $ v43endsexwith = "liliana"
             scene v43123
@@ -1455,7 +1452,6 @@ label v43lilisex:
 
 
 label v43liliendsex:
-    $ renpy.end_replay()
     scene v43151
     with dissolve
     lili "This was great... And you had a lot to give {i} giggle"
@@ -1518,7 +1514,7 @@ label v43zorsex:
             zordruza "I think those clothes are in the way..."
             scene v43158
             with dissolve
-            "You got the tip and undress her"
+            "You got the hint and undress her"
             zordruza "Yes... Play with them... Hmmmm"
             zordruza "You like them?"
             MC "I do..."
@@ -1617,7 +1613,7 @@ label v43zorsex:
             MC "{i} pant pant pant..."
             MC "That...{i} pant pant pant..."
             MC "Was great..."
-            zordruza "I agree... This some of the best sex I ever had"
+            zordruza "I agree... This was some of the best sex I ever had"
             zordruza "We should do it again sometime"
             MC "Definitely..."
             scene v43175
@@ -1629,7 +1625,7 @@ label v43zorsex:
             scene v43176
             with dissolve
             "Zordruza gets dressed and walks towards the door"
-            zordruza "Bye bye [MC] See you soon"
+            zordruza "Bye bye [MC]. See you soon"
             MC "Bye"
             play sound "sounds/door.mp3"
             scene v43043
@@ -1654,7 +1650,6 @@ label v43zorsex:
 
 
 label v43breditanecro:
-    $ renpy.end_replay()
     stop music
     play music "<loop 0.0>dark.mp3"
     scene meanwhile
@@ -1676,3 +1671,4 @@ label v43breditanecro:
     Bredita "And obey!"
     brutus "Ahhhhnnnn..."
     jump v44script
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

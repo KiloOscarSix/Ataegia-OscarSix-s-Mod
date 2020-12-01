@@ -231,7 +231,7 @@ label v44sexyotul:
     with dissolve
     "Yotul nods and you slowly start to push your dick inside her"
     MC "So tight... I'm not sure I can put it in..."
-    "After some efford you start to move in and out"
+    "After some effort you start to move in and out"
     scene v44024
     with dissolve
     yotul "Ah...."
@@ -270,7 +270,6 @@ label v44sexyotul:
     yotul "Yotul pleased, Yotul wants to look for tribe now"
     MC "Let's go then"
     $ v44youtulsex = 1
-    $ renpy.end_replay()
     jump v44rejsexyotul
 
 label v44rejsexyotul:
@@ -333,7 +332,7 @@ label v44rejsexyotul:
     "The creature feels the calm tone of your voice and stops"
     yotul "This human is strong, don't try to attack him"
     orc "Who are you?"
-    yotul "Yotul, sister of chief Vakgu, he [MC] a mage"
+    yotul "Yotul, sister of chief Vakgu, he [MC], a mage"
     orc2 "Lies!"
     scene v44040
     with dissolve
@@ -428,7 +427,7 @@ label v44postyotul:
     scene v44149
     with dissolve
     "And with some acrobatic move she stabs the lizard..."
-    "Right on the top of it's skull"
+    "Right on the top of its skull"
     "Blood starts to splurt everywhere"
     scene v44150
     with dissolve
@@ -1001,9 +1000,8 @@ label v44menuask:
             katriona "I feel the same way. You'll always be my little flower boy"
             katriona "We'll put this behind us and move on"
             MC "Speaking of behinds, ours are totally naked... how are we getting back to the College?"
-            $ renpy.end_replay()
             jump v44bugr
-        "No, I wanted it as much as you{color=#1BBB20} (+1 Katriona's Love)":
+        "No, I wanted it as much as you[ablovecolor] [ablove]":
 
             $ katrionalove += 1
             "Katriona loves you more"
@@ -1034,7 +1032,6 @@ label v44menuask:
             katriona "You make a very interesting point."
             katriona "Yeah, I definitely raised you right, you inherited my deviousness"
             MC "Thank you. Now.. about our clothes?"
-            $ renpy.end_replay()
             jump v44bugr
 
 
@@ -1307,7 +1304,7 @@ label v44bugr:
 
     scene v44063
     with dissolve
-    katriona "Let go home flower boy?"
+    katriona "Let's go home, flower boy?"
     MC "{i} Grumble"
     MC "Yeah yeah... Let's go"
     "While you travel back to the college you talk about what you saw"
@@ -1742,7 +1739,6 @@ label v44emiliasexpart:
 
 
 label v44endemilia:
-    $ renpy.end_replay()
     if v44visitbrothel <= 1:
         scene v44187
         with dissolve
@@ -1789,3 +1785,4 @@ label v44backtothecollegeayna:
 
 
     jump v45start
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

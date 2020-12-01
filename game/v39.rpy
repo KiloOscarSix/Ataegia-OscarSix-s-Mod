@@ -1131,7 +1131,6 @@ label sexchoicev39:
             MC "Wait... Can humans impregnate orcs?"
             MC "Katriona would have a 'real' orc boy around..."
             MC "I guess I should walk around the college a bit"
-            $ renpy.end_replay()
             jump afterorcv39
 
 
@@ -1453,6 +1452,8 @@ label v39trainingwin:
 
                 $ Necropoints += 1
                 "Your Necromancy skill improved"
+    if version46 == 1:
+        jump v46collegemap
 
     jump trainroomv39
 
@@ -1467,6 +1468,9 @@ label v39training:
     prof "Are you ok? I had to disspell the summon..."
     prof "Maybe you should try a weaker opponent?"
     $ v39training = 0
+    if version46 == 1:
+        jump v46collegemap
+
     jump trainroomv39
 
 
@@ -1588,7 +1592,7 @@ label v39libraryknow:
         "Didn't find any special books" if v43check == 1 and v42spellbookcount == 0:
             $ v43nobooks = 1
             yisnna "That's too bad..."
-            ysnna "Remebember, I'll reward you if you do."
+            yisnna "Remebember, I'll reward you if you do."
             jump afterorcv39
         "Nothing I'm leaving":
 
@@ -2128,3 +2132,4 @@ label endversion:
 
 
     $ renpy.movie_cutscene("opti/creditsmovie.webm")
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

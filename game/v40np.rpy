@@ -943,7 +943,7 @@ label v4runartalk:
             MC "Just tell me what I need to know..."
             scene v2216
             with dissolve
-            runar "He escaped in a certain ship, I'm getting another ready to go after him"
+            runar "He escaped on a certain ship, I'm getting another ready to go after him"
             runar "You can come with us if you want..."
             "Here we go again..."
             scene v4161run
@@ -1017,7 +1017,7 @@ label v4runartalk:
             shop "She never returned... I never saw her again..."
             shop "With or without the young girl..."
             shop "And now that I look at you, I do see the resemblance"
-            amida "Is anything else you can tell me about her?"
+            amida "Is there anything else you can tell me about her?"
             shop "I'm sorry... That's all I know..."
             amida "What about..."
             scene v41077
@@ -1165,7 +1165,7 @@ label v4runartalk:
                     with dissolve
                     jump v41morningmida
                 "[abgreen]I think I'd like to see proof of this horniness":
-                    label galleryScene5:
+
                     $ fuckmidadouble = 1
                     amida "You do?"
                     scene v41096
@@ -1350,7 +1350,6 @@ label v4runartalk:
                     MC "... Mida?... Do you hear me?"
                     MC "She fell asleep..."
                     "You wonder if this was all the booze fault"
-                    $ renpy.end_replay()
                     if midaown == 2:
                         MC "She was pretty pissed earlier because of Bredita thing"
                     MC "We'll see how it works out tomorrow morning..."
@@ -1486,7 +1485,7 @@ label v4roomstonecontrol:
     akoneko "But yes, I'm happy to still be here at the school..."
     scene v41065
     with dissolve
-    akoneko "It's a far better fate that what I could have had gone through..."
+    akoneko "It's a far better fate than what I could have had gone through..."
     MC "What do you mean?"
     akoneko "Well, I'm the daughter of a province lord."
     akoneko "My brother is in line to take over the family when my father steps down"
@@ -1499,7 +1498,7 @@ label v4roomstonecontrol:
     with dissolve
     MC "That.... is really horrible. I guess it makes me happy that I'm a nobody with no past."
     MC "I have no family obligations like you do"
-    MC "But since you're free of that fate, what will you do when you're training is done?"
+    MC "But since you're free of that fate, what will you do when your training is done?"
     MC "Stay here at the College?"
     scene v41061
     with dissolve
@@ -1894,7 +1893,7 @@ label v4tavernday:
                 keeper "Hello again"
                 keeper "What can I get you? Mead for 1 coin?"
             menu:
-                "I could use a drink[abred] [abnogold]" if Gold >=1:
+                "I could use a drink" if Gold >=1:
                     scene v4146
                     with dissolve
                     keeper "There you go!"
@@ -2268,8 +2267,8 @@ label v4hannahousenight:
     "You reach Hanna's place"
     scene v4019
     with dissolve
-    hanna "Make yourself confortable"
-    hanna "Grab a sit if you want to"
+    hanna "Make yourself comfortable"
+    hanna "Grab a seat if you want to"
     scene v4020
     with dissolve
     "You get closer to her"
@@ -2437,7 +2436,7 @@ label v4hannasex:
     hanna "Yes!! Yes!! More!! Give me more!"
     scene v4047
     with dissolve
-    "You instinctively grab her face and shoulder and trust hard"
+    "You instinctively grab her face and shoulder and thrust hard"
     hanna "Ah!! Fuck me like a whore!! Fuck me!!"
     MC "Oh... Yes..."
     "You are forced to slow down a bit and she jumps off of your cock"
@@ -2498,7 +2497,6 @@ label v4hannasex:
             stop music
             play music "<loop 0.0>sounds/beat.mp3"
             Nonen "Do you feel this? Do you?"
-            $ renpy.end_replay()
             jump v4lustmean
         "Try to hold a little longer":
 
@@ -2569,7 +2567,6 @@ label v4hannasex:
             "Your eyes start to get heavy and you fall asleep"
             play music "<loop 0.0>sounds/beat.mp3"
             Nonen "Do you feel this? Do you?"
-            $ renpy.end_replay()
             jump v4lustmean
 
 
@@ -3182,7 +3179,6 @@ label v43somehanna:
     with dissolve
     "Hanna basks in the warm, full feeling for a bit"
     "But soon the party's over and everyone gets dressed"
-    $ renpy.end_replay()
     scene v4108
     with dissolve
     "The three of you walk out of the private bath together and down the hall"
@@ -3621,7 +3617,6 @@ label v4fuckpethall:
     "You say nothing, simply a nod of approval as you make your way out of the brothel"
     "As her master walks away, Calessa's face beams with joy"
     "Already dreaming of her next encounter with her master"
-    $ renpy.end_replay()
     jump v4itsnight
 
 label v4fuckpetroom:
@@ -3733,7 +3728,7 @@ label v4fuck50room:
     cal "Should I get it wet before we start, baby?"
     cal "I'm told I can do wonderous things with my mouth..."
     menu:
-        "[abgreen]Yes":
+        "Yes":
             jump v4bjcal
         "Give me the pussy already":
             jump v4calmainevent
@@ -3903,5 +3898,5 @@ label v4end50fuck:
     scene black
     with dissolve
     "You leave the brothel"
-    $ renpy.end_replay()
     jump v4itsnight
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
