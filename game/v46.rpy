@@ -8,6 +8,7 @@ init:
     $ afterisakatlav46 = 0
     $ v46sexfannay = 0
     $ v46sexmida = 0
+    $ bathevent = 0
 
 
 label v46start:
@@ -282,7 +283,7 @@ label v46start:
     scene v46071
     with dissolve
     MC "Ok, you should go after her, training with your new weapons is crucial"
-    isabella "Thank for your help, we owe you a lot"
+    isabella "Thank you for your help, we owe you a lot"
     katla "She is right, we do... After all you've done"
     scene v46072
     with dissolve
@@ -491,11 +492,11 @@ label v46fannayscene:
     with dissolve
     "She does as you command"
     fannay "What now?"
-    MC "Didn't you came here to give me a hand?"
+    MC "Didn't you come here to give me a hand?"
     fannay "{i} Giggle"
     scene v46087
     with dissolve
-    "She grab your dick already erect dick and starts to stroke it"
+    "She grabs your already erect dick and starts to stroke it"
     fannay "Hmmm... So big... And hard..."
     MC "I think you should taste it now"
     fannay "My pleasure"
@@ -512,7 +513,7 @@ label v46fannayscene:
     MC "Ah... yeah..."
     scene v46088
     with dissolve
-    "She sucks, kisses and licks you dick for a while"
+    "She sucks, kisses and licks your dick for a while"
     fannay "I think that's wet enough..."
     scene v46090
     with dissolve
@@ -543,7 +544,7 @@ label v46fannayscene:
     fannay "Ah..... Ah...."
     scene v46095
     with dissolve
-    fannay "You made me cum.... You made me cum so much.."
+    fannay "You made me cum.... You made me cum so hard.."
     fannay "Oh my god... Ah..."
     MC "We're not done here slut!"
     scene v46096
@@ -571,7 +572,7 @@ label v46fannayscene:
     scene v46100
     with dissolve
     fannay "AHHHHH!!!! FUCK!!"
-    "You keep going at you max speed"
+    "You keep going at your max speed"
     fannay "I'm cumming!!!"
     scene v46101
     with dissolve
@@ -611,7 +612,7 @@ label v46fannayscene:
             fannay "Hmmm..."
             MC "Ok I'm satisfied, you can leave my room"
             fannay "Oh... You use me and leave me... I like that..."
-        "Cum inside":
+        "Cum inside[abcorruptioncolor] [abpregnantwtf]":
 
             $ fannaypregcount += 1
             scene v46102
@@ -639,7 +640,6 @@ label v46fannayscene:
     "She dresses and leaves your room, leaving you alone"
     MC "Damn... That was a great fuck..."
     MC "Now I need to do something around the college"
-    $ renpy.end_replay()
     jump v46collegemap
 
 label v46midascene:
@@ -670,7 +670,7 @@ label v46midascene:
         amida "I like that Isabella girl, she seems really nice. Very pretty too"
         MC "Yeah... I mean, yeah she's nice"
         amida "Ok, I'm gonna let that one slide because of what I have planned..."
-        menu galleryScene11:
+        menu:
             "Of what you have planned?[ablovecolor] [ablove]":
                 $ v46sexmida = 1
                 $ midalove +=1
@@ -710,7 +710,7 @@ label v46midascene:
                 scene v46147
                 with dissolve
                 amida "Hmmm hmmm..."
-                "She gets even faster and her lips press harder on you dick"
+                "She gets even faster and her lips press harder on your dick"
                 MC "Oh... Shit... I..."
                 scene v46148
                 with dissolve
@@ -767,14 +767,12 @@ label v46midascene:
                 with dissolve
                 MC "That was awesome... Just what I needed..."
                 MC "Time to walk around a bit"
-                $ renpy.end_replay()
                 jump v46collegemap
             "Not in the mood, I was about to leave[abred] [abnoloveidiot]":
                 amida "Oh... Ok..."
                 $ midalove -=1
                 "Mida love decreased"
                 "You leave the room"
-                $ renpy.end_replay()
                 jump v46collegemap
 
 
@@ -821,12 +819,12 @@ label v46aynaroomtalk:
     "You can feel the chill in the air"
     scene v46020
     with dissolve
-    ayna "This is Glacial wind, not only does it causes great damage"
+    ayna "This is Glacial wind, not only does it cause great damage"
     ayna "It also has a great chance of freezing your opponent solid"
     ayna "If the freezing fails, the excess magical energy causes more damage in trade"
     scene v46021
     with dissolve
-    ayna "As you see, after the opponent is weakened... it's an easy prey"
+    ayna "As you see, after the opponent is weakened... it's easy prey"
     MC "Glacial wind... Amazing..."
     ayna "This is a high level Battlemagic spell"
     scene v46022
@@ -927,10 +925,10 @@ label v46killedredragonv46:
     ayna "And I know you've wanted this for a while"
     ayna "In honesty, so have I, just to see what it was like"
     ayna "It's all Kat's fault..."
-    ayna "Also, when we're alone, you can all me Ayna. Stop being so formal with me"
+    ayna "Also, when we're alone, you can call me Ayna. Stop being so formal with me"
     MC "I... I..."
     ayna "Come on, we need to talk with the rest of the mages"
-    ayna "We can discuss this in greater detail later"
+    ayna "We can discuss this in detail later"
     scene black
     with dissolve
     scene v46040
@@ -972,13 +970,13 @@ label v46killedredragonv46:
     with dissolve
     ayna "I can also sense that they are not planning only one frontal attack"
     ayna "In fact, I believe the frontal attack is just a diversion"
-    bojay "What are you plans?"
+    bojay "What are your plans?"
     scene v46040
     with dissolve
     ayna "We will have to face each threat at the same time, that will break their plan"
     ayna "So we need to divide"
     ayna "Bojay and Qa'arra, you will grab some of the professors"
-    ayna "And face the enemies that are coming from south"
+    ayna "And face the enemies that are coming from the south"
     bojay "Understood"
     scene v46043
     with dissolve
@@ -1067,7 +1065,7 @@ label v46killedincv46:
     with dissolve
     "You run back to where you left Katriona"
     MC "You look busy..."
-    katriona "Not right time for jokes... These things are tough"
+    katriona "Not the right time for jokes... These things are tough"
     MC "You have me here now"
     scene v46111
     with dissolve
@@ -1280,8 +1278,8 @@ label v46aftergluttony2:
     scene v46136
     with dissolve
     MC "Incredible... I can't believe my eyes..."
-
-    jump yann11
+    stop sound
+    jump v47dez
 
 label v46labkattalk:
     $ v46talkkat = 1
@@ -1369,4 +1367,3 @@ label v46liliroomfannay:
     lili "Ahah sure that sounds like fun..."
     "They keep talking about girl stuff and other things you aren't interested in"
     jump v46collegemap
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -307,6 +307,9 @@ image side alineface = "alineface.png"
 define wrath = Character("Wrath", who_outlines=[(absolute(1),"#f00",absolute(0),absolute(0))], who_italic=True, color="#470202", image="wrathface", window_left_padding=110)
 image side wrathface = "wrathface.png"
 
+define sloth = Character("Sloth", who_outlines=[(absolute(1),"#f00",absolute(0),absolute(0))], who_italic=True, color="#0c5519",image="slothface", window_left_padding=110)
+image side slothface = "images/v0.4.7/slothface.png"
+
 define pride = Character("Pride", who_outlines=[(absolute(1),"#f00",absolute(0),absolute(0))], who_italic=True, color="#001021", image="prideface", window_left_padding=110)
 image side prideface = "prideface.png"
 
@@ -368,6 +371,9 @@ define necromancer = Character("Necromancer", who_outlines=[(absolute(1),"#ff00"
 
 define cerea = Character("Cerea", who_outlines=[(absolute(1),"#f00",absolute(0),absolute(0))], who_italic=True, color="#B31A1A", image="cereaface", window_left_padding=110)
 image side cereaface = "cereaface.png"
+
+define teni = Character("Tenizha", who_outlines=[(absolute(1),"#ffc0cb",absolute(0),absolute(0))], who_italic=True, color="#ffc0cb", image="teniface", window_left_padding=110)
+image side teniface = "images/v0.4.7/teniface.png"
 
 screen points_all:
     add "skillbar01.png"
